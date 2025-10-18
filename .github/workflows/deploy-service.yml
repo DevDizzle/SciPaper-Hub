@@ -1,0 +1,44 @@
+name: Deploy service
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'service/**'
+      - 'common/**'
+      - 'requirements.txt'
+      - 'Dockerfile'
+
+jobs:
+  deploy:
+    name: Build and deploy service
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WIF_PROVIDER }}
+          service_account: ${{ secrets.GCP_WIF_SERVICE_ACCOUNT }}
+
+      - name: Set up gcloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: paperrec-ai
+
+      - name: Build container image
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }} .
+
+      - name: Deploy to Cloud Run
+        uses: google-github-actions/deploy-cloudrun@v2
+        with:
+          service: paperrec-search
+          image: us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }}
+          region: us-central1
+          flags: --allow-unauthenticated --set-env-vars=PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1
