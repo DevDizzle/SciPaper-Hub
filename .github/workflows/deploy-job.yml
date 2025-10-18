@@ -1,0 +1,70 @@
+name: Deploy job
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'pipelines/**'
+      - 'common/**'
+      - 'requirements.txt'
+      - 'Dockerfile'
+
+jobs:
+  deploy:
+    name: Build and deploy job
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WIF_PROVIDER }}
+          service_account: ${{ secrets.GCP_WIF_SERVICE_ACCOUNT }}
+
+      - name: Set up gcloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: paperrec-ai
+
+      - name: Build container image
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }} .
+
+      - name: Create or update Cloud Run job
+        run: |
+          set -euo pipefail
+          IMAGE="us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${GITHUB_SHA}"
+          JOB="paperrec-search-harvest"
+          REGION="us-central1"
+          ENV_VARS="PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1"
+          ARGS=(-m pipelines.harvest --mode incremental --categories cs.AI cs.LG cs.CL cs.RO cs.CV --start_offset_days 1)
+
+          declare -a ARG_FLAGS=()
+          for ARG in "${ARGS[@]}"; do
+            ARG_FLAGS+=(--args "$ARG")
+          done
+
+          if gcloud run jobs describe "${JOB}" --region "${REGION}" >/dev/null 2>&1; then
+            gcloud run jobs update "${JOB}" \
+              --image "${IMAGE}" \
+              --region "${REGION}" \
+              --tasks 1 \
+              --max-retries 1 \
+              --set-env-vars "${ENV_VARS}" \
+              --command python \
+              "${ARG_FLAGS[@]}"
+          else
+            gcloud run jobs create "${JOB}" \
+              --image "${IMAGE}" \
+              --region "${REGION}" \
+              --tasks 1 \
+              --max-retries 1 \
+              --set-env-vars "${ENV_VARS}" \
+              --command python \
+              "${ARG_FLAGS[@]}"
+          fi
