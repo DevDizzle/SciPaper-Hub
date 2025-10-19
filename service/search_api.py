@@ -2,123 +2,84 @@
 
 from __future__ import annotations
 
-from datetime import datetime, timezone
-from typing import Any, List, Optional
+import os
+from typing import Optional
 
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, HttpUrl
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import JSONResponse
+from pydantic import BaseModel
 
+from common.config import get_settings
 from common.logging import configure_logging
 from service import arxiv_client
-from service.embed_vertex import VertexEmbeddingClient
-from service.vector_search import VertexVectorSearchClient
+from service.embed_vertex import embed_text
+from service.vector_search import VectorSearchClient, VectorSearchConfig
 
 configure_logging()
-app = FastAPI(title="SciPaper Hub Similarity Service")
-_embedding_client = VertexEmbeddingClient()
-_vector_client = VertexVectorSearchClient()
+app = FastAPI(title="PaperRec Search API", version="0.1.0")
 
 
 class SearchRequest(BaseModel):
-    url: HttpUrl
-    k: Optional[int] = 10
+    url: str
+    k: int = 5
 
 
-class MatchResponse(BaseModel):
-    score: float
-    title: str
-    authors: List[str]
-    primary_category: str
-    abstract_snippet: str
-    link_abs: str
-    link_pdf: Optional[str]
+@app.get("/healthz")
+def healthz():
+    return {"ok": True}
 
 
-class QueryResponse(BaseModel):
-    arxiv_id: str
-    title: str
-    abstract_snippet: str
-    link_abs: str
-    primary_category: str
+@app.exception_handler(Exception)
+async def unhandled(request: Request, exc: Exception):
+    return JSONResponse(status_code=500, content={"error": str(exc)})
 
 
-class SearchResponse(BaseModel):
-    query: QueryResponse
-    matches: List[MatchResponse]
-    as_of: datetime
+_settings = get_settings()
+_index_endpoint = os.getenv("INDEX_ENDPOINT")
+_deployed_index_id = os.getenv("DEPLOYED_INDEX_ID")
+
+_vector_client: Optional[VectorSearchClient] = None
 
 
-@app.post("/search", response_model=SearchResponse)
-async def search(request: SearchRequest) -> SearchResponse:
-    arxiv_id = arxiv_client.parse_arxiv_url(str(request.url))
+def _get_vector_client() -> VectorSearchClient:
+    global _vector_client
+    if _vector_client is None:
+        cfg = VectorSearchConfig(
+            project_id=_settings.project_id,
+            region=_settings.region,
+            index_endpoint=_index_endpoint,
+            deployed_index_id=_deployed_index_id,
+        )
+        _vector_client = VectorSearchClient(cfg)
+    return _vector_client
+
+
+async def _maybe_fetch_abstract(url: str) -> str:
+    arxiv_id = arxiv_client.parse_arxiv_url(url)
     if not arxiv_id:
         raise HTTPException(status_code=400, detail="Unsupported arXiv URL format")
     try:
         record = arxiv_client.get_by_id(arxiv_id)
-    except arxiv_client.ArxivNotFoundError as exc:  # pragma: no cover - network failure
+    except arxiv_client.ArxivNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
+    abstract = record.get("abstract")
+    if not abstract:
+        raise HTTPException(status_code=500, detail="No abstract returned from arXiv.")
+    return abstract
 
-    embedding = _embedding_client.embed_text(record["abstract"])  # type: ignore[arg-type]
-    k = request.k or 10
-    neighbors = _vector_client.search(embedding, k=k)
 
-    query_payload = QueryResponse(
-        arxiv_id=record["arxiv_id"],
-        title=record["title"],
-        abstract_snippet=_snippet(record["abstract"]),
-        link_abs=record["links"].get("abs", f"https://arxiv.org/abs/{record['arxiv_id']}")
-        if isinstance(record.get("links"), dict)
-        else f"https://arxiv.org/abs/{record['arxiv_id']}",
-        primary_category=record.get("primary_category", ""),
-    )
-
-    matches: List[MatchResponse] = []
-    for neighbor in neighbors:
-        metadata = neighbor.get("metadata", {})
-        matches.append(
-            MatchResponse(
-                score=_to_similarity(neighbor.get("score", 0.0)),
-                title=metadata.get("title", ""),
-                authors=_parse_list(metadata.get("authors")),
-                primary_category=metadata.get("primary_category", ""),
-                abstract_snippet=_snippet(metadata.get("abstract", "")),
-                link_abs=metadata.get("link_abs", ""),
-                link_pdf=metadata.get("link_pdf"),
-            )
+@app.post("/search")
+async def search(req: SearchRequest):
+    if not _index_endpoint or not _deployed_index_id:
+        raise HTTPException(
+            status_code=500,
+            detail="Vector index endpoint not configured (INDEX_ENDPOINT/DEPLOYED_INDEX_ID).",
         )
 
-    return SearchResponse(query=query_payload, matches=matches, as_of=datetime.now(timezone.utc))
-
-
-def _snippet(text: str, length: int = 400) -> str:
-    return (text or "").strip()[:length]
-
-
-def _parse_list(raw: Any) -> List[str]:
-    if isinstance(raw, list):
-        return [str(x) for x in raw]
-    if isinstance(raw, str):
-        raw = raw.strip()
-        if raw.startswith("["):
-            try:
-                import json
-
-                loaded = json.loads(raw)
-                if isinstance(loaded, list):
-                    return [str(x) for x in loaded]
-            except json.JSONDecodeError:  # pragma: no cover - best effort
-                pass
-        return [item.strip() for item in raw.split(";") if item.strip()]
-    return []
-
-
-def _to_similarity(distance: Any) -> float:
-    try:
-        value = float(distance)
-    except (TypeError, ValueError):  # pragma: no cover - defensive
-        return 0.0
-    # Vertex Vector Search returns distance; for cosine distance we convert to similarity.
-    return max(0.0, min(1.0, 1.0 - value))
+    abstract = await _maybe_fetch_abstract(req.url)
+    vec = embed_text(abstract)
+    neighbors = _get_vector_client().search(vec, k=req.k)
+    return {"query_url": req.url, "k": req.k, **neighbors}
 
 
 __all__ = ["app"]
