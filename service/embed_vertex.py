@@ -75,4 +75,16 @@ class VertexEmbeddingClient:
         return embeddings
 
 
-__all__ = ["VertexEmbeddingClient", "MODEL_ID"]
+_embedding_client: VertexEmbeddingClient | None = None
+
+
+def embed_text(text: str) -> List[float]:
+    """Embed a single piece of text using a shared client instance."""
+
+    global _embedding_client
+    if _embedding_client is None:
+        _embedding_client = VertexEmbeddingClient()
+    return _embedding_client.embed_text(text)
+
+
+__all__ = ["VertexEmbeddingClient", "MODEL_ID", "embed_text"]

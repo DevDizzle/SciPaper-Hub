@@ -39,6 +39,18 @@ curl -X POST http://localhost:8080/search \
   -d '{"url": "https://arxiv.org/abs/1706.03762", "k": 5}'
 ```
 
+Quick health checks when deployed (replace $SERVICE_URL with your endpoint):
+
+```bash
+curl -s -i "$SERVICE_URL/healthz"
+
+curl -s "$SERVICE_URL/openapi.json" | jq '.paths["/search"]'
+
+curl -s -X POST "$SERVICE_URL/search" \
+  -H 'Content-Type: application/json' \
+  -d '{"url":"https://arxiv.org/abs/2510.14980","k":5}' | jq .
+```
+
 ### Nightly data pipelines
 
 1. **Harvest** – Fetches all arXiv Atom entries submitted in the previous UTC
