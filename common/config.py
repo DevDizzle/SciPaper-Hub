@@ -46,7 +46,7 @@ def _get_env(name: str, *, required: bool = True) -> str:
 def get_settings() -> Settings:
     """Load :class:`Settings` from the environment."""
 
-    values = {var: _get_env(var) for var in REQUIRED_VARS}
+    values = {var.lower(): _get_env(var) for var in REQUIRED_VARS}
     vertex_location = os.getenv("VERTEX_LOCATION")
     return Settings(vertex_location=vertex_location, **values)
 
