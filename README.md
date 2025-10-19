@@ -71,6 +71,26 @@ locations; see the module docstrings for details.
 * Vector metadata stores serialized JSON for structured fields (authors,
   categories) to support detailed responses in the `/search` API.
 
+## Deploying on GCP
+
+The GitHub Actions workflows in `.github/workflows` build the repository with
+Cloud Build and publish the resulting container image to Artifact Registry at
+`us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search`. The service
+workflow then deploys that image to the `paperrec-search` Cloud Run service in
+`us-central1` with the required environment variables and outputs the service
+URL.
+
+Nightly refreshes can be orchestrated with a Cloud Run job named
+`paperrec-search-harvest`. Trigger it from Cloud Scheduler using an HTTP target
+with OIDC authentication that calls `gcloud run jobs execute` so that no static
+keys are stored. The job runs `python -m pipelines.harvest` in incremental mode
+and adheres to the arXiv API limit of one request every three seconds on a
+single connection.
+
+Refer to the official documentation for [Cloud Build](https://cloud.google.com/build/docs),
+[Cloud Run](https://cloud.google.com/run/docs), and [Workload Identity Federation](https://cloud.google.com/iam/docs/workload-identity-federation)
+for detailed setup steps.
+
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE).
