@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import os
 from typing import Optional
+import logging
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
@@ -76,9 +77,18 @@ async def search(req: SearchRequest):
             detail="Vector index endpoint not configured (INDEX_ENDPOINT/DEPLOYED_INDEX_ID).",
         )
 
+    logging.info("Fetching abstract from arXiv...")
     abstract = await _maybe_fetch_abstract(req.url)
+    logging.info("Abstract fetched successfully.")
+
+    logging.info("Embedding abstract...")
     vec = embed_text(abstract)
+    logging.info("Abstract embedded successfully.")
+
+    logging.info("Searching for neighbors...")
     neighbors = _get_vector_client().search(vec, k=req.k)
+    logging.info("Neighbors found successfully.")
+
     return {"query_url": req.url, "k": req.k, **neighbors}
 
 
