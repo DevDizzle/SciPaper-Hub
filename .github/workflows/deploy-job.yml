@@ -45,7 +45,7 @@ jobs:
           JOB="paperrec-search-harvest"
           REGION="us-central1"
           ENV_VARS="PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1,INDEX_ENDPOINT_ID=3967620694178529280,DEPLOYED_INDEX_ID=papers_v1_deployed"
-          ARGS=(-m pipelines.harvest --mode incremental --categories cs.AI cs.LG cs.CL cs.RO cs.CV --start_offset_days 1)
+          ARGS=(-m pipelines.harvest --mode incremental --categories "cs.AI cs.LG cs.CL cs.RO cs.CV" --start_offset_days 1)
 
           declare -a ARG_FLAGS=()
           for ARG in "${ARGS[@]}"; do
