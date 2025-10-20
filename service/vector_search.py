@@ -32,22 +32,10 @@ class VectorSearchClient:
             index_endpoint=self._index_endpoint,
             deployed_index_id=self._deployed_index_id,
             queries=[query],
-            return_full_datapoint=True,
         )
         resp = self._match.find_neighbors(request=request)
-        return {
-            "neighbors": [
-                {
-                    "id": n.datapoint.datapoint_id,
-                    "distance": n.distance,
-                    "labels": {kv.key: kv.value for kv in n.datapoint.restricts},
-                    "crowding_tag": n.datapoint.crowding_tag,
-                    "raw": a,
-                }
-                for a in resp.nearest_neighbors
-                for n in a.neighbors
-            ]
-        }
+        # Simplified response for debugging
+        return {"response": str(resp)}
 
 
 __all__ = ["VectorSearchConfig", "VectorSearchClient"]
