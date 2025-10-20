@@ -32,8 +32,11 @@ jobs:
         with:
           project_id: paperrec-ai
 
-      - name: Build container image
-        run: gcloud builds submit --tag us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }} .
+      - name: Build and push container image
+        run: |
+          gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
+          docker build --tag us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }} .
+          docker push us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }}
 
       - name: Create or update Cloud Run job
         run: |
@@ -41,7 +44,7 @@ jobs:
           IMAGE="us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${GITHUB_SHA}"
           JOB="paperrec-search-harvest"
           REGION="us-central1"
-          ENV_VARS="PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1"
+          ENV_VARS="PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1,INDEX_ENDPOINT_ID=3967620694178529280,DEPLOYED_INDEX_ID=papers_v1_deployed"
           ARGS=(-m pipelines.harvest --mode incremental --categories cs.AI cs.LG cs.CL cs.RO cs.CV --start_offset_days 1)
 
           declare -a ARG_FLAGS=()

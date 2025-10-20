@@ -20,6 +20,8 @@ class Settings:
     region: str
     data_bucket: str
     vector_collection_id: str
+    index_endpoint_id: str
+    deployed_index_id: str
     vertex_location: Optional[str] = None
 
     @property
@@ -32,6 +34,8 @@ REQUIRED_VARS = {
     "REGION": "Default region for Vertex AI resources.",
     "DATA_BUCKET": "Cloud Storage bucket for pipeline artifacts.",
     "VECTOR_COLLECTION_ID": "Vertex Vector Search collection identifier.",
+    "INDEX_ENDPOINT_ID": "Vertex Vector Search index endpoint identifier.",
+    "DEPLOYED_INDEX_ID": "Vertex Vector Search deployed index identifier.",
 }
 
 
