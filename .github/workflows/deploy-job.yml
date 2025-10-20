@@ -45,12 +45,15 @@ jobs:
           JOB="paperrec-search-harvest"
           REGION="us-central1"
           ENV_VARS="PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1,INDEX_ENDPOINT_ID=3967620694178529280,DEPLOYED_INDEX_ID=papers_v1_deployed"
-          ARGS=(-m pipelines.harvest --mode incremental --categories "cs.AI cs.LG cs.CL cs.RO cs.CV" --start_offset_days 1)
-
-          declare -a ARG_FLAGS=()
-          for ARG in "${ARGS[@]}"; do
-            ARG_FLAGS+=(--args "$ARG")
-          done
+          
+          CMD_ARGS=("-m" "pipelines.harvest" "--mode" "incremental" "--categories" "cs.AI cs.LG cs.CL cs.RO cs.CV" "--start_offset_days" "1")
+          
+          # Convert the array to a comma-separated string for the --args flag.
+          # The gcloud CLI expects a single string for the --args flag, 
+          # with arguments separated by commas.
+          IFS=','
+          ARGS_STR="${CMD_ARGS[*]}"
+          unset IFS
 
           if gcloud run jobs describe "${JOB}" --region "${REGION}" >/dev/null 2>&1; then
             gcloud run jobs update "${JOB}" \
@@ -60,7 +63,7 @@ jobs:
               --max-retries 1 \
               --set-env-vars "${ENV_VARS}" \
               --command python \
-              "${ARG_FLAGS[@]}"
+              --args="${ARGS_STR}"
           else
             gcloud run jobs create "${JOB}" \
               --image "${IMAGE}" \
@@ -69,5 +72,5 @@ jobs:
               --max-retries 1 \
               --set-env-vars "${ENV_VARS}" \
               --command python \
-              "${ARG_FLAGS[@]}"
+              --args="${ARGS_STR}"
           fi
