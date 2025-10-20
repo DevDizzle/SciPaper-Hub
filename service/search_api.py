@@ -35,7 +35,7 @@ async def unhandled(request: Request, exc: Exception):
 
 
 _settings = get_settings()
-_index_endpoint = os.getenv("INDEX_ENDPOINT")
+_index_endpoint = os.getenv("INDEX_ENDPOINT_ID")
 _deployed_index_id = os.getenv("DEPLOYED_INDEX_ID")
 
 _vector_client: Optional[VectorSearchClient] = None
