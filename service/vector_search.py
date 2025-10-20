@@ -20,7 +20,7 @@ class VectorSearchClient:
         self._match = aiplatform_vs.MatchServiceClient(
             client_options=ClientOptions(api_endpoint=api)
         )
-        self._index_endpoint = cfg.index_endpoint
+        self._index_endpoint = f"projects/{cfg.project_id}/locations/{cfg.region}/indexEndpoints/{cfg.index_endpoint}"
         self._deployed_index_id = cfg.deployed_index_id
 
     def search(self, query_vector: List[float], k: int = 5) -> Dict[str, Any]:
