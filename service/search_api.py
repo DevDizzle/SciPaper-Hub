@@ -50,6 +50,7 @@ def _get_vector_client() -> VectorSearchClient:
             region=_settings.region,
             index_endpoint=_index_endpoint,
             deployed_index_id=_deployed_index_id,
+            vertex_location=_settings.vertex_location,
         )
         _vector_client = VectorSearchClient(cfg)
     return _vector_client
