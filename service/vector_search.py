@@ -63,11 +63,10 @@ class VectorSearchConfig:
 
 
 class VectorSearchClient:
-    def __init__(self, cfg: VectorSearchConfig, *, transport: str = "rest"):
+    def __init__(self, cfg: VectorSearchConfig):
         self._config = cfg
         self._match = aiplatform_vs.MatchServiceClient(
-            client_options=ClientOptions(api_endpoint=cfg.api_endpoint),
-            transport=transport,
+            client_options=ClientOptions(api_endpoint=cfg.api_endpoint)
         )
         self._index_endpoint = cfg.index_endpoint_path
         self._deployed_index_id = cfg.deployed_index_id
@@ -124,8 +123,7 @@ class VertexVectorSearchClient:
             or aiplatform_vs.IndexEndpointServiceClient(client_options=client_options)
         )
         self._match_client = match_client or aiplatform_vs.MatchServiceClient(
-            client_options=client_options,
-            transport="rest",
+            client_options=client_options
         )
 
         self._project_id = self._settings.project_id
