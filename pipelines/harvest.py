@@ -8,7 +8,9 @@ from datetime import datetime, timedelta, timezone
 from typing import Dict, List
 from xml.etree import ElementTree as ET
 
-import requests
+import subprocess
+import shlex
+import urllib.parse
 
 from common.config import get_settings
 from common.gcs import GCSClient
@@ -73,12 +75,15 @@ def harvest(
     start_ts = time.time()
     page = 0
     total_entries = 0
-    session = requests.Session()
+
 
     while True:
-        response = session.get("http://export.arxiv.org/api/query", params=params, timeout=120)
-        response.raise_for_status()
-        xml_bytes = response.content
+        url = "http://export.arxiv.org/api/query?" + urllib.parse.urlencode(params)
+        command = f"wget -qO- '{url}'"
+        try:
+            xml_bytes = subprocess.check_output(shlex.split(command), timeout=120)
+        except subprocess.CalledProcessError as e:
+            raise RuntimeError(f"wget command failed with exit code {e.returncode}") from e
         entry_count = _extract_entry_count(xml_bytes)
         if entry_count == 0:
             break
