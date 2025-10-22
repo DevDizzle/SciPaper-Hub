@@ -17,6 +17,7 @@ from service.embed_vertex import embed_text
 from service.vector_search import VectorSearchClient, VectorSearchConfig
 
 configure_logging()
+# Triggering a new deployment
 app = FastAPI(title="PaperRec Search API", version="0.1.0")
 
 
