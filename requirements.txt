@@ -3,6 +3,8 @@ pydantic
 requests
 pandas
 pyarrow
+pandera
+scikit-learn
 google-cloud-storage
 google-cloud-aiplatform>=1.121.0
 protobuf>=4.25.3,<6
