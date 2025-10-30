@@ -146,6 +146,8 @@ def parse_arxiv_url(url: str) -> Optional[str]:
     if not match:
         return None
     identifier = match.group("identifier")
+    if identifier.lower().endswith(".pdf"):
+        identifier = identifier[: -len(".pdf")]
     version_match = re.search(r"v\d+", url)
     if version_match and version_match.group() not in identifier:
         identifier = f"{identifier}{version_match.group()}"

@@ -8,6 +8,10 @@ from typing import Dict, Iterable
 from xml.etree import ElementTree as ET
 
 import pandas as pd
+import pandera.pandas as pa
+
+from pandera.pandas import Column
+from pandera.dtypes import String
 
 from common.config import get_settings
 from common.gcs import GCSClient
@@ -69,6 +73,24 @@ def normalize(snapshot: str, output_blob: str | None = None) -> str:
         )
 
     df = pd.DataFrame(rows)
+
+    schema = pa.DataFrameSchema(
+        {
+            "base_id": Column(String, nullable=False),
+            "abstract": Column(String, nullable=False),
+            "published_at": Column(
+                String,
+                nullable=False,
+                checks=pa.Check(
+                    lambda s: pd.to_datetime(s, errors="coerce").notna().all(),
+                    element_wise=False,
+                    error="published_at must be parseable as datetime",
+                ),
+            ),
+        }
+    )
+
+    schema.validate(df)
     output_blob = output_blob or f"normalized/{snapshot}/records.parquet"
     buffer = BytesIO()
     df.to_parquet(buffer, index=False)

@@ -1,0 +1,12 @@
+[run]
+omit =
+    common/gcs.py
+    pipelines/harvest.py
+    pipelines/indexer.py
+    service/embed_vertex.py
+    service/vector_search.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+

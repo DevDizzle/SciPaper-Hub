@@ -91,6 +91,17 @@ async def search(req: SearchRequest):
     neighbors = _get_vector_client().search(vec, k=req.k)
     logging.info("Neighbors found successfully.")
 
+    logging.info(
+        "RECO_RESPONSE",
+        extra={
+            "json_fields": {
+                "query_url": req.url,
+                "k": req.k,
+                "recommendations": [n["id"] for n in neighbors.get("neighbors", [])],
+            }
+        },
+    )
+
     return {"query_url": req.url, "k": req.k, **neighbors}
 
 
