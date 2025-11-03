@@ -1,10 +1,4 @@
-# SciPaper Hub (Inactive)
-
-**This project is currently inactive and the infrastructure has been decommissioned.**
-
-For instructions on how to recommission the infrastructure, please see [INSTRUCTIONS.md](INSTRUCTIONS.md).
-
----
+# SciPaper Hub
 
 SciPaper Hub provides two major components:
 
