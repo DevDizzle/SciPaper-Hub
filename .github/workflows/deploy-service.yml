@@ -42,10 +42,14 @@ jobs:
           pytest --cov=. --cov-report=term-missing --cov-fail-under=70
 
       - name: Build and push container image
+        id: build-push
         run: |
           gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
-          docker build --tag us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }} .
-          docker push us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }}
+          IMAGE_URL="us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }}"
+          docker build --tag $IMAGE_URL --build-arg GIT_SHA=${{ github.sha }} .
+          docker push $IMAGE_URL
+          DIGEST=$(gcloud artifacts docker images describe $IMAGE_URL --format='get(image_summary.digest)')
+          echo "IMAGE_DIGEST=$DIGEST" >> $GITHUB_ENV
 
       - name: Deploy to Cloud Run
         uses: google-github-actions/deploy-cloudrun@v2
@@ -53,4 +57,4 @@ jobs:
           service: paperrec-search
           image: us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }}
           region: us-central1
-          flags: --allow-unauthenticated --set-env-vars=PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1,INDEX_ENDPOINT_ID=3967620694178529280,DEPLOYED_INDEX_ID=papers_v1_deployed
+          flags: --allow-unauthenticated --set-env-vars=PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1,INDEX_ENDPOINT_ID=7873895236596924416,DEPLOYED_INDEX_ID=papers_v1_deployed_cli,B_DEPLOYED_INDEX_ID=papers_v3_deployed_cli,GIT_SHA=${{ github.sha }},IMAGE_DIGEST=${{ env.IMAGE_DIGEST }}
