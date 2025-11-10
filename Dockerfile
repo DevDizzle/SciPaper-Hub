@@ -40,4 +40,4 @@ ENV IMAGE_DIGEST=$IMAGE_DIGEST
 ENV PORT 8080
 
 # Command to run the FastAPI application
-CMD ["uvicorn", "service.search_api:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["uvicorn", "service.search_api:app", "--host", "0.0.0.0", "--port", "8080"]# Trivial change to trigger workflow
