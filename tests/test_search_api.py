@@ -40,7 +40,10 @@ def search_api(monkeypatch: pytest.MonkeyPatch):
 
     monkeypatch.setattr(module, "_maybe_fetch_abstract", _mock_fetch)
     monkeypatch.setattr(module, "embed_text", lambda text: [0.1, 0.2, 0.3])
-    monkeypatch.setattr(module, "_get_vector_client", lambda: _DummyVectorClient())
+
+    # Patch the client variables directly after the app startup has run
+    module._vector_client_A = _DummyVectorClient()
+    module._vector_client_B = _DummyVectorClient()
 
     yield module
 
