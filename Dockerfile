@@ -27,12 +27,7 @@ WORKDIR /app
 # Copy installed packages from builder stage
 COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
 # Explicitly copy uvicorn executable from builder stage
-COPY --from=builder /usr/local/bin/uvicorn /usr/local/bin/uvicorn
-
-# Copy application source code
-COPY common/ ./common/
-COPY service/ ./service/
-COPY pipelines/ ./pipelines/
+# COPY --from=builder /usr/local/bin/uvicorn /usr/local/bin/uvicorn # Removed as we are using python -m uvicorn
 
 # Set environment variables for provenance
 ENV GIT_SHA=$GIT_SHA
@@ -42,4 +37,4 @@ ENV IMAGE_DIGEST=$IMAGE_DIGEST
 ENV PORT 8080
 
 # Command to run the FastAPI application
-CMD ["uvicorn", "service.search_api:app", "--host", "0.0.0.0", "--port", "8080"]# Trivial change to trigger workflow
+CMD ["python", "-m", "uvicorn", "service.search_api:app", "--host", "0.0.0.0", "--port", "8080"]
