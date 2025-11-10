@@ -10,11 +10,13 @@ import logging
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
+import vertexai # Import vertexai
+from google.cloud import aiplatform # Import aiplatform
 
 from common.config import get_settings
 from common.logging import configure_logging
 from service import arxiv_client
-from service.embed_vertex import embed_text
+from service.embed_vertex import embed_text, VertexEmbeddingClient # Import VertexEmbeddingClient
 from service.vector_search import VectorSearchClient, VectorSearchConfig
 
 configure_logging()
@@ -49,31 +51,59 @@ _vector_client_B: Optional[VectorSearchClient] = None
 @app.on_event("startup")
 def _init_clients():
     global _vector_client_A, _vector_client_B
-    settings = get_settings()
-    index_endpoint = os.getenv("INDEX_ENDPOINT_ID")
-    deployed_index_id_A = os.getenv("DEPLOYED_INDEX_ID")
+    try:
+        settings = get_settings()
+        logging.info(f"Settings loaded: Project ID={settings.project_id}, Region={settings.region}, Vertex Location={settings.vertex_location}")
 
-    if deployed_index_id_A:
-        cfg_A = VectorSearchConfig(
-            project_id=settings.project_id,
-            region=settings.region,
-            index_endpoint=index_endpoint,
-            deployed_index_id=deployed_index_id_A,
-            vertex_location=settings.vertex_location,
-        )
-        _vector_client_A = VectorSearchClient(cfg_A)
-        logging.info("Initialized vector client A for index %s", deployed_index_id_A)
+        # Initialize Vertex AI SDK
+        try:
+            aiplatform.init(project=settings.project_id, location=settings.vertex_location or settings.region)
+            logging.info("Vertex AI SDK initialized.")
+        except Exception as e:
+            logging.error(f"Failed to initialize Vertex AI SDK: {e}", exc_info=True)
+            raise
 
-    if B_DEPLOYED_INDEX_ID:
-        cfg_B = VectorSearchConfig(
-            project_id=settings.project_id,
-            region=settings.region,
-            index_endpoint=index_endpoint,
-            deployed_index_id=B_DEPLOYED_INDEX_ID,
-            vertex_location=settings.vertex_location,
-        )
-        _vector_client_B = VectorSearchClient(cfg_B)
-        logging.info("Initialized vector client B for index %s", B_DEPLOYED_INDEX_ID)
+        # Initialize _vector_client_A
+        deployed_index_id_A = os.getenv("DEPLOYED_INDEX_ID")
+        if deployed_index_id_A:
+            try:
+                cfg_A = VectorSearchConfig(
+                    project_id=settings.project_id,
+                    region=settings.region,
+                    index_endpoint=os.getenv("INDEX_ENDPOINT_ID"),
+                    deployed_index_id=deployed_index_id_A,
+                    vertex_location=settings.vertex_location,
+                )
+                _vector_client_A = VectorSearchClient(cfg_A)
+                logging.info("Initialized vector client A for index %s", deployed_index_id_A)
+            except Exception as e:
+                logging.error(f"Failed to initialize vector client A: {e}", exc_info=True)
+                raise
+        else:
+            logging.warning("DEPLOYED_INDEX_ID not set, vector client A will not be initialized.")
+
+        # Initialize _vector_client_B
+        if B_DEPLOYED_INDEX_ID:
+            try:
+                cfg_B = VectorSearchConfig(
+                    project_id=settings.project_id,
+                    region=settings.region,
+                    index_endpoint=os.getenv("INDEX_ENDPOINT_ID"),
+                    deployed_index_id=B_DEPLOYED_INDEX_ID,
+                    vertex_location=settings.vertex_location,
+                )
+                _vector_client_B = VectorSearchClient(cfg_B)
+                logging.info("Initialized vector client B for index %s", B_DEPLOYED_INDEX_ID)
+            except Exception as e:
+                logging.error(f"Failed to initialize vector client B: {e}", exc_info=True)
+                raise
+        else:
+            logging.warning("B_DEPLOYED_INDEX_ID not set, vector client B will not be initialized.")
+
+    except Exception as e:
+        logging.critical(f"Application startup failed: {e}", exc_info=True)
+        # Re-raise to ensure Cloud Run reports failure
+        raise
 
 
 async def _maybe_fetch_abstract(url: str) -> str:
@@ -125,7 +155,7 @@ async def search(req: SearchRequest, request: Request):
 
     # Provenance logging
     request_id = request.headers.get("X-Cloud-Trace-Context", "no-trace")
-
+    
     neighbors_list = neighbors.get("neighbors", [])
     first_neighbor = neighbors_list[0] if neighbors_list else {}
     first_meta = first_neighbor.get("metadata", {})
@@ -150,6 +180,5 @@ async def search(req: SearchRequest, request: Request):
     )
 
     return {"query_url": req.url, "k": req.k, **neighbors}
-
 
 __all__ = ["app"]
