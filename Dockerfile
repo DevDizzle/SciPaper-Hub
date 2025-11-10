@@ -8,6 +8,9 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Add a debug step to find uvicorn
+RUN find / -name uvicorn -type f -executable -print || echo "uvicorn not found"
+
 # Also install test dependencies to run tests
 RUN pip install pytest pytest-cov pandera
 
