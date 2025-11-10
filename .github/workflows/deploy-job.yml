@@ -72,7 +72,8 @@ jobs:
               --max-retries 1 \
               --set-env-vars "${ENV_VARS}" \
               --command python \
-              --args="${ARGS_STR}"
+              --args="${ARGS_STR}" \
+              --service-account=${{ secrets.GCP_WIF_SERVICE_ACCOUNT }}
           else
             gcloud run jobs create "${JOB}" \
               --image "${IMAGE}" \
@@ -81,5 +82,6 @@ jobs:
               --max-retries 1 \
               --set-env-vars "${ENV_VARS}" \
               --command python \
-              --args="${ARGS_STR}"
+              --args="${ARGS_STR}" \
+              --service-account=${{ secrets.GCP_WIF_SERVICE_ACCOUNT }}
           fi
