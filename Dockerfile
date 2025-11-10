@@ -33,6 +33,9 @@ COPY service ./service
 COPY pipelines ./pipelines
 COPY README.md ./README.md
 
+# Install wget for the harvest pipeline
+RUN apt-get update && apt-get install -y wget
+
 # Set environment variables for provenance
 ENV GIT_SHA=$GIT_SHA
 ENV IMAGE_DIGEST=$IMAGE_DIGEST
