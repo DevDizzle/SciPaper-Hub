@@ -142,4 +142,4 @@ if __name__ == "__main__":  # pragma: no cover
         categories=args.categories,
         start_offset_days=args.start_offset_days,
         snapshot=args.snapshot,
-    )
+    )# Trivial change to trigger workflow
