@@ -26,8 +26,12 @@ WORKDIR /app
 
 # Copy installed packages from builder stage
 COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
-# Explicitly copy uvicorn executable from builder stage
-# COPY --from=builder /usr/local/bin/uvicorn /usr/local/bin/uvicorn # Removed as we are using python -m uvicorn
+
+# Copy application source code
+COPY common ./common
+COPY service ./service
+COPY pipelines ./pipelines
+COPY README.md ./README.md
 
 # Set environment variables for provenance
 ENV GIT_SHA=$GIT_SHA
