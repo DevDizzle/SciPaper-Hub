@@ -8,9 +8,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Add a debug step to find uvicorn
-RUN find / -name uvicorn -type f -executable -print || echo "uvicorn not found"
-
 # Also install test dependencies to run tests
 RUN pip install pytest pytest-cov pandera
 
@@ -29,8 +26,8 @@ WORKDIR /app
 
 # Copy installed packages from builder stage
 COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
-# Copy Python executables from builder stage
-COPY --from=builder /usr/local/bin /usr/local/bin
+# Explicitly copy uvicorn executable from builder stage
+COPY --from=builder /usr/local/bin/uvicorn /usr/local/bin/uvicorn
 
 # Copy application source code
 COPY common/ ./common/
