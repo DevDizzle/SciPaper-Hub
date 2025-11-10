@@ -26,6 +26,8 @@ WORKDIR /app
 
 # Copy installed packages from builder stage
 COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
+# Copy Python executables from builder stage
+COPY --from=builder /usr/local/bin /usr/local/bin
 
 # Copy application source code
 COPY common/ ./common/
