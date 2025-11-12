@@ -104,7 +104,7 @@ def get_by_id(arxiv_id: str) -> Dict[str, object]:
     """Fetch a single arXiv entry by id."""
 
     global _last_request_ts
-    params = {
+    params: Dict[str, str | int] = {
         "search_query": f"id:{arxiv_id}",
         "start": 0,
         "max_results": 1,
@@ -112,7 +112,7 @@ def get_by_id(arxiv_id: str) -> Dict[str, object]:
         "sortOrder": "descending",
     }
     _rate_limit_sleep()
-    response = requests.get(ARXIV_API_URL, params=params, timeout=30)
+    response = requests.get(ARXIV_API_URL, params=params, timeout=60)
     response.raise_for_status()
 
     feed = ET.fromstring(response.content)
@@ -122,7 +122,7 @@ def get_by_id(arxiv_id: str) -> Dict[str, object]:
     return parse_entry(entries[0])
 
 
-def iter_query(params: Dict[str, object]) -> Iterable[Dict[str, object]]:
+def iter_query(params: Dict[str, str | int]) -> Iterable[Dict[str, object]]:
     """Iterate over entries for an arbitrary arXiv query."""
 
     _rate_limit_sleep()

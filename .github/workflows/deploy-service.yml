@@ -57,4 +57,4 @@ jobs:
           service: paperrec-search
           image: us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${{ github.sha }}
           region: us-central1
-          flags: --allow-unauthenticated --set-env-vars=PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1,INDEX_ENDPOINT_ID=7873895236596924416,DEPLOYED_INDEX_ID=papers_v1_deployed_cli,B_DEPLOYED_INDEX_ID=papers_v3_deployed_cli,GIT_SHA=${{ github.sha }},IMAGE_DIGEST=${{ env.IMAGE_DIGEST }}
+          flags: --allow-unauthenticated --set-env-vars=PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1,INDEX_ENDPOINT_ID=7873895236596924416,DEPLOYED_INDEX_ID=paperrec_index_v3_deployed_1762896488544,B_DEPLOYED_INDEX_ID=,GIT_SHA=${{ github.sha }},IMAGE_DIGEST=${{ env.IMAGE_DIGEST }}
