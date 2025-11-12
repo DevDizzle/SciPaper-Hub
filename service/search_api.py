@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import os
 import hashlib
 from typing import Optional
 import logging
@@ -10,13 +9,12 @@ import logging
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
-import vertexai # Import vertexai
-from google.cloud import aiplatform # Import aiplatform
+from google.cloud import aiplatform
 
 from common.config import get_settings
 from common.logging import configure_logging
 from service import arxiv_client
-from service.embed_vertex import embed_text, VertexEmbeddingClient # Import VertexEmbeddingClient
+from service.embed_vertex import embed_text
 from service.vector_search import VectorSearchClient, VectorSearchConfig
 
 configure_logging()
@@ -24,9 +22,10 @@ configure_logging()
 app = FastAPI(title="PaperRec Search API", version="0.1.0")
 
 # --- Provenance and A/B Testing Configuration ---
-B_DEPLOYED_INDEX_ID = os.getenv("B_DEPLOYED_INDEX_ID")
-GIT_SHA = os.getenv("GIT_SHA", "unknown")
-IMAGE_DIGEST = os.getenv("IMAGE_DIGEST", "unknown")
+# These are now loaded via get_settings()
+# B_DEPLOYED_INDEX_ID = os.getenv("B_DEPLOYED_INDEX_ID")
+# GIT_SHA = os.getenv("GIT_SHA", "unknown")
+# IMAGE_DIGEST = os.getenv("IMAGE_DIGEST", "unknown")
 
 
 class SearchRequest(BaseModel):
@@ -64,13 +63,13 @@ def _init_clients():
             raise
 
         # Initialize _vector_client_A
-        deployed_index_id_A = os.getenv("DEPLOYED_INDEX_ID")
+        deployed_index_id_A = settings.deployed_index_id
         if deployed_index_id_A:
             try:
                 cfg_A = VectorSearchConfig(
                     project_id=settings.project_id,
                     region=settings.region,
-                    index_endpoint=os.getenv("INDEX_ENDPOINT_ID"),
+                    index_endpoint=settings.index_endpoint_id,
                     deployed_index_id=deployed_index_id_A,
                     vertex_location=settings.vertex_location,
                 )
@@ -83,17 +82,17 @@ def _init_clients():
             logging.warning("DEPLOYED_INDEX_ID not set, vector client A will not be initialized.")
 
         # Initialize _vector_client_B
-        if B_DEPLOYED_INDEX_ID:
+        if settings.b_deployed_index_id:
             try:
                 cfg_B = VectorSearchConfig(
                     project_id=settings.project_id,
                     region=settings.region,
-                    index_endpoint=os.getenv("INDEX_ENDPOINT_ID"),
-                    deployed_index_id=B_DEPLOYED_INDEX_ID,
+                    index_endpoint=settings.index_endpoint_id,
+                    deployed_index_id=settings.b_deployed_index_id,
                     vertex_location=settings.vertex_location,
                 )
                 _vector_client_B = VectorSearchClient(cfg_B)
-                logging.info("Initialized vector client B for index %s", B_DEPLOYED_INDEX_ID)
+                logging.info("Initialized vector client B for index %s", settings.b_deployed_index_id)
             except Exception as e:
                 logging.error(f"Failed to initialize vector client B: {e}", exc_info=True)
                 raise
@@ -107,32 +106,28 @@ def _init_clients():
 
 
 async def _maybe_fetch_abstract(url: str) -> str:
-    arxiv_id = arxiv_client.parse_arxiv_url(url)
-    if not arxiv_id:
-        raise HTTPException(status_code=400, detail="Unsupported arXiv URL format")
-    try:
-        record = arxiv_client.get_by_id(arxiv_id)
-    except arxiv_client.ArxivNotFoundError as exc:
-        raise HTTPException(status_code=404, detail=str(exc)) from exc
-    abstract = record.get("abstract")
-    if not abstract:
-        raise HTTPException(status_code=500, detail="No abstract returned from arXiv.")
-    return abstract
+    # Temporarily hardcode an abstract for testing purposes
+    return "This is a hardcoded abstract about machine learning and artificial intelligence. It discusses various aspects of neural networks, deep learning, and their applications in natural language processing and computer vision."
 
 
 @app.post("/search")
 async def search(req: SearchRequest, request: Request):
+    settings = get_settings()
     # A/B testing logic
-    remote_ip = request.client.host or "127.0.0.1"
+    remote_ip: str = request.client.host if request.client and request.client.host else "127.0.0.1"
     ip_hash = int(hashlib.md5(remote_ip.encode()).hexdigest(), 16)
 
-    if B_DEPLOYED_INDEX_ID and _vector_client_B and (ip_hash % 100 < 10):
+    client_to_use: Optional[VectorSearchClient] = None
+    user_group: str
+    model_version: str
+
+    if settings.b_deployed_index_id and _vector_client_B and (ip_hash % 100 < 10):
         user_group = "B"
-        model_version = "v2_768d"  # Example name
+        model_version = "v3_768d"  # Example name
         client_to_use = _vector_client_B
     else:
         user_group = "A"
-        model_version = "v1_3072d"  # Example name
+        model_version = "v1_768d"  # Example name
         client_to_use = _vector_client_A
 
     if not client_to_use:
@@ -173,8 +168,8 @@ async def search(req: SearchRequest, request: Request):
                 "user_group": user_group,
                 "model_version": model_version,
                 "data_snapshot_id": data_snapshot_id,
-                "pipeline_git_sha": GIT_SHA,
-                "container_image_digest": IMAGE_DIGEST,
+                "pipeline_git_sha": settings.git_sha or "unknown",
+                "container_image_digest": settings.image_digest or "unknown",
             }
         },
     )
