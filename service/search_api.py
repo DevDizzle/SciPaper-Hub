@@ -106,8 +106,13 @@ def _init_clients():
 
 
 async def _maybe_fetch_abstract(url: str) -> str:
-    # Temporarily hardcode an abstract for testing purposes
-    return "This is a hardcoded abstract about machine learning and artificial intelligence. It discusses various aspects of neural networks, deep learning, and their applications in natural language processing and computer vision."
+    arxiv_id = arxiv_client.parse_arxiv_url(url)
+    if not arxiv_id:
+        raise HTTPException(
+            status_code=400, detail=f"Could not parse arXiv ID from URL: {url}"
+        )
+    entry = arxiv_client.get_by_id(arxiv_id)
+    return str(entry["abstract"])
 
 
 @app.post("/search")

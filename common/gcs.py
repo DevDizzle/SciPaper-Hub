@@ -6,7 +6,7 @@ import json
 from dataclasses import dataclass
 from typing import Any, Dict, Iterable, Optional
 
-from google.cloud import storage
+from google.cloud.storage import Client
 
 
 @dataclass
@@ -16,7 +16,7 @@ class GCSClient:
     project_id: Optional[str] = None
 
     def __post_init__(self) -> None:
-        self._client = storage.Client(project=self.project_id) if self.project_id else storage.Client()
+        self._client = Client(project=self.project_id) if self.project_id else Client()
 
     def upload_text(self, bucket: str, blob_name: str, text: str, *, content_type: str = "text/plain") -> None:
         bucket_ref = self._client.bucket(bucket)

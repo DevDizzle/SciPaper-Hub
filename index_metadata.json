@@ -1,0 +1,15 @@
+{
+    "contentsDeltaUri": "gs://paperrec-ai-arxiv-data-us-central1/index_contents",
+    "config": {
+        "dimensions": 768,
+        "approximateNeighborsCount": 150,
+        "distanceMeasureType": "DOT_PRODUCT_DISTANCE",
+        "shardSize": "SHARD_SIZE_MEDIUM",
+        "algorithmConfig": {
+            "treeAhConfig": {
+                "leafNodeEmbeddingCount": 500,
+                "leafNodesToSearchPercent": 7
+            }
+        }
+    }
+}

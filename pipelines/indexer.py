@@ -5,8 +5,11 @@ from __future__ import annotations
 import random
 from io import BytesIO
 from typing import Iterable, List
+import json
+import logging
 
 import pandas as pd
+from google.cloud import aiplatform
 
 from common.config import get_settings
 from common.gcs import GCSClient
@@ -16,7 +19,7 @@ from service.vector_search import VertexVectorSearchClient
 
 configure_logging()
 
-BATCH_SIZE = 256
+BATCH_SIZE = 50
 PROBE_COUNT = 100
 
 
@@ -28,15 +31,36 @@ def _chunks(sequence: List[int], size: int) -> Iterable[List[int]]:
 def index_snapshot(snapshot: str, parquet_blob: str | None = None) -> None:
     settings = get_settings()
     client = GCSClient(settings.project_id)
+
+    # --- Safeguard ---
+    embed_client = VertexEmbeddingClient()
+    vector_client = VertexVectorSearchClient()
+    
+    index = aiplatform.MatchingEngineIndex(index_name=vector_client.index_resource_name)
+    index_dimension = index.gca_resource.metadata["config"]["dimensions"]
+    
+    embedding_dimension = len(embed_client.embed_text("healthcheck"))
+    
+    if index_dimension != embedding_dimension:
+        error_message = (
+            f"Embedding dimension {embedding_dimension} does not match index dimension {index_dimension}. "
+            f"Ensure MODEL_ID in 'service/embed_vertex.py' is 'text-embedding-005' and the index is created with dimension=768."
+        )
+        logging.error(error_message)
+        raise ValueError(error_message)
+    
+    logging.info(
+        "Dimension check passed: Index and model both have dimension %d.",
+        index_dimension,
+    )
+    # --- End Safeguard ---
+
     blob_name = parquet_blob or f"normalized/{snapshot}/records.parquet"
     parquet_bytes = client.download_bytes(settings.data_bucket, blob_name)
     df = pd.read_parquet(BytesIO(parquet_bytes))
 
     if df.empty:
         return
-
-    embed_client = VertexEmbeddingClient()
-    vector_client = VertexVectorSearchClient()
 
     indices = list(range(len(df)))
     for batch_indices in _chunks(indices, BATCH_SIZE):
@@ -52,9 +76,9 @@ def index_snapshot(snapshot: str, parquet_blob: str | None = None) -> None:
                     "metadata": {
                         "title": row["title"],
                         "abstract": row["abstract"],
-                        "authors": row["authors"],
+                        "authors": json.dumps(list(row["authors"])),
                         "primary_category": row["primary_category"],
-                        "categories": row["categories"],
+                        "categories": json.dumps(list(row["categories"])),
                         "published_at": row["published_at"],
                         "updated_at": row["updated_at"],
                         "link_abs": row["link_abs"],

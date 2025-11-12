@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 from io import BytesIO
-from typing import Dict, Iterable
+from typing import Dict, Iterable, List, Optional, cast
 from xml.etree import ElementTree as ET
 
 import pandas as pd
@@ -41,33 +41,33 @@ def normalize(snapshot: str, output_blob: str | None = None) -> str:
     settings = get_settings()
     client = GCSClient(settings.project_id)
     manifest = _load_manifest(client, settings.data_bucket, snapshot)
-    prefix = manifest["prefix"]
-    ingest_snapshot = manifest["snapshot"]
+    prefix: str = str(manifest["prefix"])
+    ingest_snapshot: str = str(manifest["snapshot"])
 
     records: Dict[str, Dict[str, object]] = {}
-    for record in _iter_entries(client, settings.data_bucket, prefix):
-        base_id = record["base_id"]
-        existing = records.get(base_id)
-        if not existing or record["version"] > existing["version"]:
-            records[base_id] = record
+    for record_entry in _iter_entries(client, settings.data_bucket, prefix):
+        base_id: str = str(record_entry["base_id"])
+        existing: Optional[Dict[str, object]] = records.get(base_id)
+        if not existing or int(str(record_entry["version"])) > int(str(existing.get("version", 0))):
+            records[base_id] = record_entry
 
     rows = []
-    for record in records.values():
-        links = record.get("links", {})
+    for record_value in records.values():
+        links: Dict[str, str] = record_value.get("links", {})  # type: ignore
         rows.append(
             {
-                "arxiv_id": record["arxiv_id"],
-                "base_id": record["base_id"],
-                "version": record["version"],
-                "title": record["title"],
-                "abstract": record["abstract"],
-                "authors": record.get("authors", []),
-                "primary_category": record.get("primary_category", ""),
-                "categories": record.get("categories", []),
-                "published_at": record.get("published_at", ""),
-                "updated_at": record.get("updated_at", ""),
-                "link_abs": links.get("abs", f"https://arxiv.org/abs/{record['arxiv_id']}"),
-                "link_pdf": links.get("pdf", f"https://arxiv.org/pdf/{record['arxiv_id']}.pdf"),
+                "arxiv_id": str(record_value["arxiv_id"]),
+                "base_id": str(record_value["base_id"]),
+                "version": int(str(record_value["version"])),
+                "title": str(record_value["title"]),
+                "abstract": str(record_value["abstract"]),
+                "authors": list(cast(List[str], record_value.get("authors", []))),
+                "primary_category": str(record_value.get("primary_category", "")),
+                "categories": list(cast(List[str], record_value.get("categories", []))),
+                "published_at": str(record_value.get("published_at", "")),
+                "updated_at": str(record_value.get("updated_at", "")),
+                "link_abs": links.get("abs", f"https://arxiv.org/abs/{record_value['arxiv_id']}"),
+                "link_pdf": links.get("pdf", f"https://arxiv.org/pdf/{record_value['arxiv_id']}.pdf"),
                 "ingest_snapshot": ingest_snapshot,
             }
         )

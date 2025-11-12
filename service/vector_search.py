@@ -15,10 +15,12 @@ from common.config import Settings, get_settings
 def _struct_to_dict(struct: Optional[struct_pb2.Struct]) -> Dict[str, Any]:
     if not struct:
         return {}
-    return json_format.MessageToDict(
-        struct,
-        preserving_proto_field_name=True,
-    )
+    if isinstance(struct, struct_pb2.Struct):
+        return json_format.MessageToDict(
+            struct,
+            preserving_proto_field_name=True,
+        )
+    return dict(struct)
 
 
 def _build_api_endpoint(location: str) -> str:

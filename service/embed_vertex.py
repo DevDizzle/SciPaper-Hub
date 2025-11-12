@@ -1,21 +1,21 @@
-"""Vertex AI embedding client for gemini-embedding-001."""
+"""Vertex AI embedding client for text-embedding-005."""
 
 from __future__ import annotations
 
 import hashlib
 from dataclasses import dataclass, field
-from typing import List, Sequence
+from typing import List, Sequence, Union, cast
 
 import vertexai
 
 try:  # pragma: no cover - fallback import path for older SDKs
-    from vertexai.language_models import TextEmbeddingModel
+    from vertexai.language_models import TextEmbeddingInput, TextEmbeddingModel
 except ImportError:  # pragma: no cover
-    from vertexai.preview.language_models import TextEmbeddingModel  # type: ignore
+    from vertexai.preview.language_models import TextEmbeddingInput, TextEmbeddingModel  # type: ignore
 
 from common.config import get_settings
 
-MODEL_ID = "gemini-embedding-001"
+MODEL_ID = "text-embedding-005"
 
 
 def _hash_text(text: str) -> str:
@@ -65,7 +65,9 @@ class VertexEmbeddingClient:
                 uncached_indices.append(idx)
 
         if uncached_texts:
-            responses = self._model.get_embeddings(uncached_texts)
+            # Explicitly cast to the expected type
+            texts_for_embedding = cast(List[Union[str, TextEmbeddingInput]], uncached_texts)
+            responses = self._model.get_embeddings(texts_for_embedding)
             for i, response in enumerate(responses):
                 vector = list(response.values)
                 original_idx = uncached_indices[i]

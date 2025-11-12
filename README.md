@@ -64,12 +64,15 @@ curl -s -X POST "$SERVICE_URL/search" \
    ```bash
    python -m pipelines.normalize 20240101T000000Z
    ```
-3. **Indexer** – Embeds abstracts with Vertex `gemini-embedding-001` and
-   upserts them into the Vertex Vector Search collection, validating the write
-   with read-after-write probes.
+3. **Indexer** – Embeds abstracts and upserts them into the Vertex Vector Search
+   collection, validating the write with read-after-write probes.
    ```bash
    python -m pipelines.indexer 20240101T000000Z
    ```
+   > **Note on Dimensions:** We use `text-embedding-005` as the embedding model.
+   > The Vertex Vector Search index must be created and configured with a dimension of **768**.
+   > If the model is ever changed, the index must be recreated (or a new one created)
+   > with a matching dimension, or the app will fail the startup dimension check.
 
 Each step accepts optional flags to override snapshot identifiers or blob
 locations; see the module docstrings for details.
@@ -82,6 +85,12 @@ locations; see the module docstrings for details.
   redundant Vertex AI calls.
 * Vector metadata stores serialized JSON for structured fields (authors,
   categories) to support detailed responses in the `/search` API.
+
+### A/B Testing
+
+The search service supports A/B testing of different deployed vector search indexes. This is controlled by the `B_DEPLOYED_INDEX_ID` environment variable. If this variable is set, a small percentage of traffic (determined by the hash of the client's IP address) will be routed to the index specified by `B_DEPLOYED_INDEX_ID`.
+
+The `user_group` in the `RECO_RESPONSE` structured logs will be set to "A" or "B" to indicate which index was used. The `model_version` field will also reflect the version of the index used for the request.
 
 ## Deploying on GCP
 

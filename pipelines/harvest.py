@@ -64,7 +64,7 @@ def harvest(
     client = GCSClient(settings.project_id)
     search_query = _build_search_query(final_categories, start_offset_days)
 
-    params = {
+    params: Dict[str, str | int] = {
         "search_query": search_query,
         "start": 0,
         "max_results": MAX_RESULTS,
@@ -95,7 +95,7 @@ def harvest(
         if entry_count < MAX_RESULTS:
             break
         page += 1
-        params["start"] += MAX_RESULTS
+        params["start"] = int(params["start"]) + MAX_RESULTS
         time.sleep(SLEEP_SECONDS)
 
     duration = time.time() - start_ts
@@ -116,6 +116,8 @@ def harvest(
 
 
 if __name__ == "__main__":  # pragma: no cover
+    import json
+
     parser = argparse.ArgumentParser(description="Nightly harvester for arXiv categories.")
     parser.add_argument(
         "--mode",
@@ -137,9 +139,10 @@ if __name__ == "__main__":  # pragma: no cover
     parser.add_argument("--snapshot", help="Optional snapshot override.")
     args = parser.parse_args()
 
-    harvest(
+    manifest = harvest(
         mode=args.mode,
         categories=args.categories,
         start_offset_days=args.start_offset_days,
         snapshot=args.snapshot,
-    )# Trivial change to trigger workflow
+    )
+    print(json.dumps(manifest))

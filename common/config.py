@@ -23,6 +23,9 @@ class Settings:
     index_endpoint_id: str
     deployed_index_id: str
     vertex_location: Optional[str] = None
+    b_deployed_index_id: Optional[str] = None
+    git_sha: Optional[str] = None
+    image_digest: Optional[str] = None
 
     @property
     def gcs_bucket_uri(self) -> str:
@@ -52,7 +55,16 @@ def get_settings() -> Settings:
 
     values = {var.lower(): _get_env(var) for var in REQUIRED_VARS}
     vertex_location = os.getenv("VERTEX_LOCATION")
-    return Settings(vertex_location=vertex_location, **values)
+    b_deployed_index_id = os.getenv("B_DEPLOYED_INDEX_ID")
+    git_sha = os.getenv("GIT_SHA")
+    image_digest = os.getenv("IMAGE_DIGEST")
+    return Settings(
+        vertex_location=vertex_location,
+        b_deployed_index_id=b_deployed_index_id,
+        git_sha=git_sha,
+        image_digest=image_digest,
+        **values,
+    )
 
 
 __all__ = ["Settings", "get_settings"]

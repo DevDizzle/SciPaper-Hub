@@ -50,7 +50,7 @@ def _rank_neighbors(
     query_vec = vectorizer.transform([abstract])
     similarities = cosine_similarity(query_vec, matrix)[0]
     top_indices = np.argsort(similarities)[::-1][:top_k]
-    return top_indices
+    return top_indices.tolist()
 
 
 def _dcg(relevances: Sequence[int]) -> float:
