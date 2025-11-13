@@ -162,9 +162,9 @@ async def search(req: SearchRequest, request: Request):
     data_snapshot_id = first_meta.get("ingest_snapshot", "unknown")
 
     logging.info(
-        "RECO_RESPONSE",
-        extra={
-            "json_fields": {
+        json.dumps(
+            {
+                "message": "RECO_RESPONSE",
                 "query_url": req.url,
                 "k": req.k,
                 "recommendations": [n["id"] for n in neighbors_list],
@@ -176,7 +176,7 @@ async def search(req: SearchRequest, request: Request):
                 "pipeline_git_sha": settings.git_sha or "unknown",
                 "container_image_digest": settings.image_digest or "unknown",
             }
-        },
+        )
     )
 
     return {"query_url": req.url, "k": req.k, **neighbors}
