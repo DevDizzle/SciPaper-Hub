@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 import hashlib
-import json
 from typing import Optional
 import logging
 
@@ -162,23 +161,20 @@ async def search(req: SearchRequest, request: Request):
     first_meta = first_neighbor.get("metadata", {})
     data_snapshot_id = first_meta.get("ingest_snapshot", "unknown")
 
-    logging.info(
-        json.dumps(
-            {
-                "message": "RECO_RESPONSE",
-                "query_url": req.url,
-                "k": req.k,
-                "recommendations": [n["id"] for n in neighbors_list],
-                # --- Provenance Fields ---
-                "request_id": request_id,
-                "user_group": user_group,
-                "model_version": model_version,
-                "data_snapshot_id": data_snapshot_id,
-                "pipeline_git_sha": settings.git_sha or "unknown",
-                "container_image_digest": settings.image_digest or "unknown",
-            }
-        )
-    )
+    log_payload = {
+        "query_url": req.url,
+        "k": req.k,
+        "recommendations": [n["id"] for n in neighbors_list],
+        # --- Provenance Fields ---
+        "request_id": request_id,
+        "user_group": user_group,
+        "model_version": model_version,
+        "data_snapshot_id": data_snapshot_id,
+        "pipeline_git_sha": settings.git_sha or "unknown",
+        "container_image_digest": settings.image_digest or "unknown",
+    }
+
+    logging.info("RECO_RESPONSE", extra={"json_fields": log_payload})
 
     return {"query_url": req.url, "k": req.k, **neighbors}
 
