@@ -34,13 +34,14 @@ class SearchRequest(BaseModel):
 
 
 @app.get("/healthz")
+@app.get("/healhz")
 def healthz():
+    """Health endpoint used by Cloud Run uptime checks.
+
+    Historically the path was sometimes misspelled as `/healhz` in
+    infrastructure configs, so we serve both spellings to avoid 404s.
+    """
     return {"ok": True}
-
-
-@app.get("/healthz-test-123")
-def healthz_test():
-    return {"test": "ok"}
 
 
 @app.exception_handler(Exception)
