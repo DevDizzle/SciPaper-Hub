@@ -35,6 +35,9 @@ def search_api(monkeypatch: pytest.MonkeyPatch):
 
     config_module.get_settings.cache_clear()
 
+    # Disable the app's logging configuration during tests to allow caplog to work
+    monkeypatch.setattr("service.search_api.configure_logging", lambda *args, **kwargs: None)
+
     module = importlib.import_module("service.search_api")
     importlib.reload(module)
 
