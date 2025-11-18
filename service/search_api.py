@@ -184,8 +184,24 @@ async def search(req: SearchRequest, request: Request):
 
 
 
+
+
+
+
 __all__ = ["app"]
 
 
 
+
+
+
+
 # Trigger redeployment to ensure latest version is active.
+
+
+
+# This is a trivial change to trigger the CI/CD pipeline.
+
+
+
+
