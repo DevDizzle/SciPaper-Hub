@@ -38,6 +38,11 @@ def healthz():
     return {"ok": True}
 
 
+@app.get("/healthz-test-123")
+def healthz_test():
+    return {"test": "ok"}
+
+
 @app.exception_handler(Exception)
 async def unhandled(request: Request, exc: Exception):
     return JSONResponse(status_code=500, content={"error": str(exc)})
