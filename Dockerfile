@@ -1,5 +1,5 @@
 # builder stage
-FROM python:3.9-slim AS builder
+FROM python:3.12-slim AS builder
 
 # Set the working directory in the container
 WORKDIR /app
@@ -15,7 +15,7 @@ RUN pip install pytest pytest-cov pandera
 COPY tests/ ./tests/
 
 # final stage
-FROM python:3.9-slim
+FROM python:3.12-slim
 
 # Set provenance arguments
 ARG GIT_SHA
@@ -25,7 +25,7 @@ ARG IMAGE_DIGEST
 WORKDIR /app
 
 # Copy installed packages from builder stage
-COPY --from=builder /usr/local/lib/python3.9/site-packages /usr/local/lib/python3.9/site-packages
+COPY --from=builder /usr/local/lib/python3.12/site-packages /usr/local/lib/python3.12/site-packages
 
 # Copy application source code
 COPY common ./common
