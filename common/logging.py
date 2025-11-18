@@ -12,14 +12,17 @@ _DEFAULT_FORMAT = "%(asctime)s %(levelname)s [%(name)s] %(message)s"
 def configure_logging(level: int = logging.INFO, *, fmt: Optional[str] = None) -> None:
     """Configure root logging with sane defaults.
 
-    Parameters
-    ----------
-    level:
-        Logging level for the root logger.
-    fmt:
-        Optional logging format string. When omitted, a structured default
-        format suitable for Cloud Logging ingestion is used.
+    Tries to use the Google Cloud Logging library if available, otherwise
+    falls back to a standard basicConfig setup.
     """
+    try:
+        import google.cloud.logging
+        client = google.cloud.logging.Client()
+        client.setup_logging(log_level=level)
+        logging.info("Successfully configured Google Cloud Logging handler.")
+        return
+    except ImportError:
+        logging.info("google-cloud-logging not found, using basicConfig.")
 
     logging.basicConfig(
         level=level,

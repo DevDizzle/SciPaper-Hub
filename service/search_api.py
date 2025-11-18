@@ -182,4 +182,10 @@ async def search(req: SearchRequest, request: Request):
 
     return {"query_url": req.url, "k": req.k, **neighbors}
 
+
+
 __all__ = ["app"]
+
+
+
+# Trigger redeployment to ensure latest version is active.
