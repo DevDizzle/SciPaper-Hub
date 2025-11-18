@@ -1,0 +1,4702 @@
+[
+  {
+    "httpRequest": {},
+    "insertId": "691bd8eb0000f85e53208df4",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09414",
+      "recommendations": [
+        "2511.08191",
+        "2511.07970",
+        "2511.07749",
+        "2511.08035",
+        "2511.07947"
+      ],
+      "request_id": "88c431ae4b680651241821aa0ebdea71/9341049713197352380",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:43.279257674Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:43.063582Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8e80000d8ef6f59fc5c",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09397",
+      "recommendations": [
+        "2511.08032",
+        "2511.08294",
+        "2511.08545",
+        "2511.07743",
+        "2511.08178"
+      ],
+      "request_id": "efd9d3e172f47eb8cd58df573314d7fb/199236356118370379",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:40.281035400Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:40.055535Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8e500016906ad985ae4",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.08747",
+      "recommendations": [
+        "2511.07908",
+        "2511.08052",
+        "2511.07943",
+        "2511.08151",
+        "2511.08521"
+      ],
+      "request_id": "486aff1e81e9dd608f9df9ddc2e9ebf6/10879949262182367547;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:37.283772718Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:37.092422Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8e20001ace759d2eed6",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "bca9f21ebddede31cd58df573314d7fe/7174570917717370934",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:34.285151865Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:34.109799Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8df0000dcec6a9b53af",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09352",
+      "recommendations": [
+        "2511.07935",
+        "2511.07976",
+        "2511.07808",
+        "2511.07980",
+        "2511.07798"
+      ],
+      "request_id": "7ffbf505a8411e4d61cf9e5f1de01fe1/16112465137733545841",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:31.286949780Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:31.056556Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8dc0000dc2cc3c30282",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09381",
+      "recommendations": [
+        "2511.07922",
+        "2511.08319",
+        "2511.07998",
+        "2511.08440",
+        "2511.07800"
+      ],
+      "request_id": "6c5c9fe3bfb4a0762dcde475f94d77f0/10369533241995311255",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:28.293335151Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:28.056364Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8d9000158715dd94eda",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "7936e372e73e9c6569c5fcfe5ca888ad/9654481835722374134;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:25.293181980Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:25.088177Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8d60001e2186dffd9e9",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "8e41fbcce693467fc73dfbb28983c2d0/4424144366333623162",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:22.297779886Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:22.123416Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8d3000102ff94d48994",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09404",
+      "recommendations": [
+        "2511.08287",
+        "2511.08444",
+        "2511.08269",
+        "2511.07970",
+        "2511.07798"
+      ],
+      "request_id": "9fc0b665e3a96b4baef97f7ddf51b7dc/11670977268732815461",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:19.301431342Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:19.066303Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8d00000dc1c37d32cf5",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09392",
+      "recommendations": [
+        "2511.08378",
+        "2511.08325",
+        "2511.07738",
+        "2511.08136",
+        "2511.07831"
+      ],
+      "request_id": "06340619d164f5f025a912e9518eff15/1828943402824900637",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:16.302507611Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:16.056348Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8cd0000eb1ce0ffc487",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09381",
+      "recommendations": [
+        "2511.07922",
+        "2511.08319",
+        "2511.07998",
+        "2511.08440",
+        "2511.07800"
+      ],
+      "request_id": "ff38c410d4c909b46d34a8513cf3b428/14317264242214396782;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:13.303344161Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:13.060188Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8ca0000ccee04e2cb8d",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09388",
+      "recommendations": [
+        "2511.08583",
+        "2511.07877",
+        "2511.08248",
+        "2511.07710",
+        "2511.08043"
+      ],
+      "request_id": "3fb4a1dc7edef0ad748f49e827bb29a8/3106478771399370756",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:10.309449962Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:10.052462Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8c70000d4b23ebfc83b",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09404",
+      "recommendations": [
+        "2511.08287",
+        "2511.08444",
+        "2511.08269",
+        "2511.07970",
+        "2511.07798"
+      ],
+      "request_id": "301137e8f5d2dca26664b198089a7e02/17383910017380190156",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:07.309243116Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:07.054450Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8c40000f3ce837eaac8",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09298",
+      "recommendations": [
+        "2511.07813",
+        "2511.07978",
+        "2511.08545",
+        "2511.07896",
+        "2511.08032"
+      ],
+      "request_id": "5518b69b2a6c0d5b61a99aa49434669d/4746175666726180724",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:04.311846483Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:04.062414Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8c100016dd02ab4a8b3",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "c6b315be04253c5b123afbc01750d998/1517925786776841506;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:24:01.314576675Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:24:01.093648Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8be00011caa31f887bb",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09443",
+      "recommendations": [
+        "2511.07717",
+        "2511.08545",
+        "2511.08328",
+        "2511.08224",
+        "2511.08178"
+      ],
+      "request_id": "1202fac7d2d644aa07913688c634e036/6101379594659622969",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:58.319007778Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:58.072874Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8bb000194472ad35502",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09443",
+      "recommendations": [
+        "2511.07717",
+        "2511.08545",
+        "2511.08328",
+        "2511.08224",
+        "2511.08178"
+      ],
+      "request_id": "46822ced26e5f4d3d11ea7b4cbf40a26/5746709351475041929",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:55.322036820Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:55.103495Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8b80001985f3b8f184d",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09425",
+      "recommendations": [
+        "2511.07892",
+        "2511.07857",
+        "2511.08544",
+        "2511.08570",
+        "2511.08340"
+      ],
+      "request_id": "893d17d16b5f34808f5e09f84554bc98/1038127919558640889",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:52.324411716Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:52.104543Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8b500017ca10e44b6b8",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09286",
+      "recommendations": [
+        "2511.07897",
+        "2511.08238",
+        "2511.07929",
+        "2511.07749",
+        "2511.08075"
+      ],
+      "request_id": "18b441ef0d551031bff9d7b07824e619/2991094825888931810;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:49.328879493Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:49.097441Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8b20001a744331f2019",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09392",
+      "recommendations": [
+        "2511.08378",
+        "2511.08325",
+        "2511.07738",
+        "2511.08136",
+        "2511.07831"
+      ],
+      "request_id": "250157b8f26d9677efd654d772c6e7c7/8034044664588048060",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:46.330580726Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:46.108356Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8af0000b839f51315f5",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09298",
+      "recommendations": [
+        "2511.07813",
+        "2511.07978",
+        "2511.08545",
+        "2511.07896",
+        "2511.08032"
+      ],
+      "request_id": "d46714254b4b3d354e35bb92db65095e/8091887019696329617",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:43.333310390Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:43.047161Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8ac0000abc872f6363e",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09515",
+      "recommendations": [
+        "2511.07732",
+        "2511.08172",
+        "2511.07833",
+        "2511.07730",
+        "2511.07750"
+      ],
+      "request_id": "254335ded5fd83e470b2f28639e9c304/1752855415266019658",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:40.334229300Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:40.043976Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8a900017ac5d7a640ed",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09414",
+      "recommendations": [
+        "2511.08191",
+        "2511.07970",
+        "2511.07749",
+        "2511.08035",
+        "2511.07947"
+      ],
+      "request_id": "1226842d86956110014bc11cd9e5fef4/13090293931455680004;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:37.338405401Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:37.096965Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8a6000085f21ba2c632",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09392",
+      "recommendations": [
+        "2511.08378",
+        "2511.08325",
+        "2511.07738",
+        "2511.08136",
+        "2511.07831"
+      ],
+      "request_id": "31dea4d40a1b20233a95bdc5851613dc/10751236255557777287",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:34.349027628Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:34.034290Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8a30000842a61c2355f",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09298",
+      "recommendations": [
+        "2511.07813",
+        "2511.07978",
+        "2511.08545",
+        "2511.07896",
+        "2511.08032"
+      ],
+      "request_id": "ccb4346e35e7f235610f3992f8f05063/9810201582694277404",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:31.343894719Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:31.033834Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8a000009d8170264bde",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09533",
+      "recommendations": [
+        "2511.08242",
+        "2511.08521",
+        "2511.08319",
+        "2511.08301",
+        "2511.08585"
+      ],
+      "request_id": "42a7d6b40fcbb9a5303b10d7d429cf79/630989136438495539",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:28.347289681Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:28.040321Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd89d00008bb1abcc6daa",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09515",
+      "recommendations": [
+        "2511.07732",
+        "2511.08172",
+        "2511.07833",
+        "2511.07730",
+        "2511.07750"
+      ],
+      "request_id": "f824772fd62fa18bc36011b231d7afb5/245841213931424665;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:25.350942630Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:25.035761Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd89a00012c6ec9b0853c",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "8123b04f857506a268c3a84fb36ca6d2/8898761626628213531",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:22.352252970Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:22.076910Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd897000120b70c35601f",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09558",
+      "recommendations": [
+        "2511.08172",
+        "2511.07730",
+        "2511.08545",
+        "2511.07877",
+        "2511.07820"
+      ],
+      "request_id": "a2f34f6a8f1d1ef173ad6185c7070710/1780501318184375421",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:19.354679410Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:19.073911Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8940000671278d2d311",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09443",
+      "recommendations": [
+        "2511.07717",
+        "2511.08545",
+        "2511.08328",
+        "2511.08224",
+        "2511.08178"
+      ],
+      "request_id": "e5ce0e3111bb43b53a95bdc58516163f/11589973305631393306",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:16.358183852Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:16.026386Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd89100008ef81d1dea81",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09392",
+      "recommendations": [
+        "2511.08378",
+        "2511.08325",
+        "2511.07738",
+        "2511.08136",
+        "2511.07831"
+      ],
+      "request_id": "3211cf6fd4d963dffa1f8203a7ff4258/13977068123229862162;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:13.360129852Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:13.036600Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd88e0000d13a132eb0db",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09298",
+      "recommendations": [
+        "2511.07813",
+        "2511.07978",
+        "2511.08545",
+        "2511.07896",
+        "2511.08032"
+      ],
+      "request_id": "7b639e3028efa585c75f7e9ee8fcd374/10501100683358695661",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:10.363333176Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:10.053562Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd88b0000974e786d7cc7",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09404",
+      "recommendations": [
+        "2511.08287",
+        "2511.08444",
+        "2511.08269",
+        "2511.07970",
+        "2511.07798"
+      ],
+      "request_id": "45189dd074c720c9c75a6bed14ba45f9/9746497522970196126",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:07.365412677Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:07.038734Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8880001c74e5f3a5dd1",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.08715",
+      "recommendations": [
+        "2511.07813",
+        "2511.07943",
+        "2511.08581",
+        "2511.08392",
+        "2511.08052"
+      ],
+      "request_id": "09ddd9d7c39b5546732e27797507f329/9911988125991258811",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:04.371759968Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:04.116558Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8850000935688718952",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09298",
+      "recommendations": [
+        "2511.07813",
+        "2511.07978",
+        "2511.08545",
+        "2511.07896",
+        "2511.08032"
+      ],
+      "request_id": "ddd71dfc02e2b0e8f026c89fd99040a6/1918362878918312346;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:23:01.371619923Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:23:01.037718Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd882000082a994d21033",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09414",
+      "recommendations": [
+        "2511.08191",
+        "2511.07970",
+        "2511.07749",
+        "2511.08035",
+        "2511.07947"
+      ],
+      "request_id": "b6044586223c49cdcac02772d85ff930/14159685602908031066",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:58.041339891Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:58.033449Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd87f00016d6f6a4591bc",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09352",
+      "recommendations": [
+        "2511.07935",
+        "2511.07976",
+        "2511.07808",
+        "2511.07980",
+        "2511.07798"
+      ],
+      "request_id": "d6dbb69b4c5f1acd490b689364bdcfbf/3056585369406088756",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:55.376688385Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:55.093551Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd87c000166ef5e936089",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09396",
+      "recommendations": [
+        "2511.08113",
+        "2511.07989",
+        "2511.08172",
+        "2511.08145",
+        "2511.08156"
+      ],
+      "request_id": "86d0bc556e48b2d010565f55c52f6a73/16387809968137767422",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:52.380028863Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:52.091887Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd879000065104d1ab101",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09392",
+      "recommendations": [
+        "2511.08378",
+        "2511.08325",
+        "2511.07738",
+        "2511.08136",
+        "2511.07831"
+      ],
+      "request_id": "3e527fb82207a9dd88fbc644922aa800/10713600997698586850;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:49.049049172Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:49.025872Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd876000080c6d9a90309",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09414",
+      "recommendations": [
+        "2511.08191",
+        "2511.07970",
+        "2511.07749",
+        "2511.08035",
+        "2511.07947"
+      ],
+      "request_id": "df7f737a5ac8c78ccac02772d85ff940/148051077993741982",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:46.054348914Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:46.032966Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8730000593a6befe7f7",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09478",
+      "recommendations": [
+        "2511.07800",
+        "2511.08325",
+        "2511.08364",
+        "2511.07833",
+        "2511.08024"
+      ],
+      "request_id": "6f2108ad3ed57f86dbd690363f507b93/4953034407364066515",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:43.055248162Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:43.022842Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd87000008127a8f1796a",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09558",
+      "recommendations": [
+        "2511.08172",
+        "2511.07730",
+        "2511.08545",
+        "2511.07877",
+        "2511.07820"
+      ],
+      "request_id": "a1c0e2e38d348409b6e2f5bc40f20576/18085865165391235811",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:40.062166314Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:40.033063Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd86d0000fecd7375bdb7",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "b11e3a97166269cff9a0d531ad81a937/8101953614728883508;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:37.394432518Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:37.065229Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd86a0000ce7b4b5fa209",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09404",
+      "recommendations": [
+        "2511.08287",
+        "2511.08444",
+        "2511.08269",
+        "2511.07970",
+        "2511.07798"
+      ],
+      "request_id": "6f6fc5b82291c67a89f1bd1a4039921d/756833268196412400",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:34.064292421Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:34.052859Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd86700008ac62e67c220",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09381",
+      "recommendations": [
+        "2511.07922",
+        "2511.08319",
+        "2511.07998",
+        "2511.08440",
+        "2511.07800"
+      ],
+      "request_id": "e79e1fc956c1c530174ce31eb06551c1/3835885013368439406",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:31.066573024Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:31.035526Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd864000048e1989893a6",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09425",
+      "recommendations": [
+        "2511.07892",
+        "2511.07857",
+        "2511.08544",
+        "2511.08570",
+        "2511.08340"
+      ],
+      "request_id": "17b48818be543d6464ac428aa65e06e5/8629363217177386841",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:28.070958441Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:28.018657Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8610001314ad459c5ea",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09397",
+      "recommendations": [
+        "2511.08032",
+        "2511.08294",
+        "2511.08545",
+        "2511.07743",
+        "2511.08178"
+      ],
+      "request_id": "7628e76d7d2bfa22cc46392a55aa2318/16574373851486145679;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:25.406781028Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:25.078154Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd85e00008638ef921554",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09414",
+      "recommendations": [
+        "2511.08191",
+        "2511.07970",
+        "2511.07749",
+        "2511.08035",
+        "2511.07947"
+      ],
+      "request_id": "6a30e42d284e67cf658c6488ce912934/10489064671715824875",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:22.072596805Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:22.034360Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd85b000203b3766616a0",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.08715",
+      "recommendations": [
+        "2511.07813",
+        "2511.07943",
+        "2511.08581",
+        "2511.08392",
+        "2511.08052"
+      ],
+      "request_id": "2c032e7ec7ad80c28c5e887c88cfa34b/6131488104025713206",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:19.409657220Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:19.132019Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8580001e7e80da8231f",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09533",
+      "recommendations": [
+        "2511.08242",
+        "2511.08521",
+        "2511.08319",
+        "2511.08301",
+        "2511.08585"
+      ],
+      "request_id": "6a0dd62d0e84356c16791c9aa1b05cef/15062454830589176350",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:16.411202547Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:16.124904Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8550001317d84b0b729",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09414",
+      "recommendations": [
+        "2511.08191",
+        "2511.07970",
+        "2511.07749",
+        "2511.08035",
+        "2511.07947"
+      ],
+      "request_id": "555e774d3c22cadf594d57d4ea65fd6a/17522097353812373470;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:13.413447374Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:13.078205Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd85200006702b2bc32f3",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09286",
+      "recommendations": [
+        "2511.07897",
+        "2511.08238",
+        "2511.07929",
+        "2511.07749",
+        "2511.08075"
+      ],
+      "request_id": "4cf228f6eef2a0f3104d7fbd2493182c/8245093879823383661",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:10.084410807Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:10.026370Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd84f0000440c9eede521",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09425",
+      "recommendations": [
+        "2511.07892",
+        "2511.07857",
+        "2511.08544",
+        "2511.08570",
+        "2511.08340"
+      ],
+      "request_id": "eb464d30208e315cb0f43ca27f3def39/9088256154138556734",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:07.083667148Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:07.017420Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd84c0000fb34107e4656",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09298",
+      "recommendations": [
+        "2511.07813",
+        "2511.07978",
+        "2511.08545",
+        "2511.07896",
+        "2511.08032"
+      ],
+      "request_id": "f815e7a276e02b847cb09b6c90ffe514/8631823902208586016",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:04.088646427Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:04.064308Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8490000619ee08b9a12",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.08747",
+      "recommendations": [
+        "2511.07908",
+        "2511.08052",
+        "2511.07943",
+        "2511.08151",
+        "2511.08521"
+      ],
+      "request_id": "4f0b0c4f379167ebb0f43ca27f3de78a/5826920984215922139;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:22:01.093025288Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:22:01.024990Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8460004bb607b63bc75",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09298",
+      "recommendations": [
+        "2511.07813",
+        "2511.07978",
+        "2511.08545",
+        "2511.07896",
+        "2511.08032"
+      ],
+      "request_id": "4521b81dc477d1fa41addaebcc89dcaa/1718822847398455644",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:58.426311653Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:58.310112Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd843000044195c1c7635",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.08747",
+      "recommendations": [
+        "2511.07908",
+        "2511.08052",
+        "2511.07943",
+        "2511.08151",
+        "2511.08521"
+      ],
+      "request_id": "7bb9b9d07c52976dff98bbd7aaf3ff29/7409349804307623061",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:55.098015041Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:55.017433Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8400000564a8170b0f3",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09396",
+      "recommendations": [
+        "2511.08113",
+        "2511.07989",
+        "2511.08172",
+        "2511.08145",
+        "2511.08156"
+      ],
+      "request_id": "a4751dd05c97348eb0247f0cd4164d30/9864064500187784998",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:52.099445285Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:52.022090Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd83d0001561fd4a8f308",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09381",
+      "recommendations": [
+        "2511.07922",
+        "2511.08319",
+        "2511.07998",
+        "2511.08440",
+        "2511.07800"
+      ],
+      "request_id": "90b42b3158e00aa05024682a15e131a7/11255092399815297008;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:49.100976689Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:49.087583Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd83a0000ab224c1a4feb",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09352",
+      "recommendations": [
+        "2511.07935",
+        "2511.07976",
+        "2511.07808",
+        "2511.07980",
+        "2511.07798"
+      ],
+      "request_id": "81724034d82e6f31c959d890c56df28e/5049273205717076464",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:46.104757605Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:46.043810Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd837000201fe49ec680b",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09425",
+      "recommendations": [
+        "2511.07892",
+        "2511.07857",
+        "2511.08544",
+        "2511.08570",
+        "2511.08340"
+      ],
+      "request_id": "e939b1c633cbb7afa820c3e7160fb2eb/16224968841427422778",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:43.439268258Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:43.131582Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd83400001e193fae371f",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09286",
+      "recommendations": [
+        "2511.07897",
+        "2511.08238",
+        "2511.07929",
+        "2511.07749",
+        "2511.08075"
+      ],
+      "request_id": "d996d370ca19ba67e57b9bc28dcca29f/13133034911669325452",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:40.109720542Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:40.007705Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd831000014f91328f97b",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.08747",
+      "recommendations": [
+        "2511.07908",
+        "2511.08052",
+        "2511.07943",
+        "2511.08151",
+        "2511.08521"
+      ],
+      "request_id": "b19c6ff780bc0861224af53d6a80637d/12340168519558385994;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:37.111332022Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:37.005369Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd82e00000d4159b3ce99",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09404",
+      "recommendations": [
+        "2511.08287",
+        "2511.08444",
+        "2511.08269",
+        "2511.07970",
+        "2511.07798"
+      ],
+      "request_id": "7f61345d03842df386e51ede9396313d/17799533553863422358",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:34.114826471Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:34.003393Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd82b00004d882e5b8bba",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.08747",
+      "recommendations": [
+        "2511.07908",
+        "2511.08052",
+        "2511.07943",
+        "2511.08151",
+        "2511.08521"
+      ],
+      "request_id": "c07a5accfae8d0caecadbac85a3834b0/7561007332365471671",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:31.117281732Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:31.019848Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8280000b6f201d13b7e",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09388",
+      "recommendations": [
+        "2511.08583",
+        "2511.07877",
+        "2511.08248",
+        "2511.07710",
+        "2511.08043"
+      ],
+      "request_id": "77808b74378480c5121c6c1e18012ce4/9208733381668077005",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:28.115857861Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:28.046834Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd824000f3ea7ad609776",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09396",
+      "recommendations": [
+        "2511.08113",
+        "2511.07989",
+        "2511.08172",
+        "2511.08145",
+        "2511.08156"
+      ],
+      "request_id": "9ee78aacd6c2ca7bbe12ba6894f3738c/15102715109857103840;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:25.120092163Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:24.999079Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8220000b37204486af6",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09404",
+      "recommendations": [
+        "2511.08287",
+        "2511.08444",
+        "2511.08269",
+        "2511.07970",
+        "2511.07798"
+      ],
+      "request_id": "a312a8481bc03da6bfebb1a800fdfec1/16824482146429912192",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:22.122746656Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:22.045938Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd81f0000412236a3bd0c",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09352",
+      "recommendations": [
+        "2511.07935",
+        "2511.07976",
+        "2511.07808",
+        "2511.07980",
+        "2511.07798"
+      ],
+      "request_id": "e30ba28ccd5f69bf27e6a028f7c4e3c5/1128985882406669473",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:19.126655924Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:19.016674Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd81c000018f6b7e5284b",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.08747",
+      "recommendations": [
+        "2511.07908",
+        "2511.08052",
+        "2511.07943",
+        "2511.08151",
+        "2511.08521"
+      ],
+      "request_id": "d71df9307cdaf63116450cc962684271/11287038859402422412",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:16.126895035Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:16.006390Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8190000bbefaa963a9f",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09352",
+      "recommendations": [
+        "2511.07935",
+        "2511.07976",
+        "2511.07808",
+        "2511.07980",
+        "2511.07798"
+      ],
+      "request_id": "06fbb5ad6d7924da9f1e7e4ed901c419/4199389403245382340;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:13.131350649Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:13.048111Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd816000024403364225a",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09396",
+      "recommendations": [
+        "2511.08113",
+        "2511.07989",
+        "2511.08172",
+        "2511.08145",
+        "2511.08156"
+      ],
+      "request_id": "ab5a7ba86612693fb391c69269848057/6715000046543625140",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:10.134021059Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:10.009280Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd8130001533cd0ed5d8b",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09396",
+      "recommendations": [
+        "2511.08113",
+        "2511.07989",
+        "2511.08172",
+        "2511.08145",
+        "2511.08156"
+      ],
+      "request_id": "0d0c60e76a90ffc9997384acf2c46581/9539550156387870106",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:07.136801342Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:07.086844Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd81000009b9e353f5b7e",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09381",
+      "recommendations": [
+        "2511.07922",
+        "2511.08319",
+        "2511.07998",
+        "2511.08440",
+        "2511.07800"
+      ],
+      "request_id": "5a631aa675c827495d7306aec65eed9d/11061447218114322720",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:04.138885661Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:04.039838Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd80d0000e41769f07f62",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09443",
+      "recommendations": [
+        "2511.07717",
+        "2511.08545",
+        "2511.08328",
+        "2511.08224",
+        "2511.08178"
+      ],
+      "request_id": "6ccf3b5ef55dab4c91273d8b38ab2f98/9919129272573338153;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:21:01.142082051Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:21:01.058391Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd80a00002bad5fe5ca0c",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09392",
+      "recommendations": [
+        "2511.08378",
+        "2511.08325",
+        "2511.07738",
+        "2511.08136",
+        "2511.07831"
+      ],
+      "request_id": "fb5e5a21e20bafbafeb7ce78ea24fd19/8400343175495892656",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:58.145810541Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:58.011181Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd80700023a9d18e746d9",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09414",
+      "recommendations": [
+        "2511.08191",
+        "2511.07970",
+        "2511.07749",
+        "2511.08035",
+        "2511.07947"
+      ],
+      "request_id": "0bf41e270e76c2f0d449812f1cabec39/6751119235793463558",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:55.480898907Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:55.146077Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd80400000e3de5e57f6e",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09381",
+      "recommendations": [
+        "2511.07922",
+        "2511.08319",
+        "2511.07998",
+        "2511.08440",
+        "2511.07800"
+      ],
+      "request_id": "b280c43caf90ba2f5af8fd0eafe45f24/17520384782633267883",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:52.149758180Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:52.003645Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd80100003d7b0bdd58fe",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "c4cb216284ed32e006c0ce3d701e5964/14591004489304372902;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:49.153065502Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:49.015739Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7fe0000696303563e10",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09286",
+      "recommendations": [
+        "2511.07897",
+        "2511.08238",
+        "2511.07929",
+        "2511.07749",
+        "2511.08075"
+      ],
+      "request_id": "9325e5f1d400df894674059e97638586/2589786759380177069",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:46.156093861Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:46.026979Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7fa000f350165068c36",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09443",
+      "recommendations": [
+        "2511.07717",
+        "2511.08545",
+        "2511.08328",
+        "2511.08224",
+        "2511.08178"
+      ],
+      "request_id": "43bceede4e1fa3e4e4ade3aebfd7e6a3/3825269928661262287",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:43.158016006Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:42.996609Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7f80001034e0a4fd423",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09082",
+      "recommendations": [
+        "2511.08172",
+        "2511.08480",
+        "2511.08113",
+        "2511.08163",
+        "2511.07744"
+      ],
+      "request_id": "65a877046a02679e7dc4462d5adae46f/14783361419583705434",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:40.159586852Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:40.066382Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7f500045b5bd3030f1b",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09298",
+      "recommendations": [
+        "2511.07813",
+        "2511.07978",
+        "2511.08545",
+        "2511.07896",
+        "2511.08032"
+      ],
+      "request_id": "fb1a412326d4a3c195d9eb13dbd2d7ca/4685967401203600284;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:37.496665600Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:37.285531Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7f20001f9e516800dd2",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09443",
+      "recommendations": [
+        "2511.07717",
+        "2511.08545",
+        "2511.08328",
+        "2511.08224",
+        "2511.08178"
+      ],
+      "request_id": "3329f735fdf1cf6268cc6897ed894340/12588239736857539636",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:34.165172884Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:34.129509Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7ef00012b844a1e0fa8",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09515",
+      "recommendations": [
+        "2511.07732",
+        "2511.08172",
+        "2511.07833",
+        "2511.07730",
+        "2511.07750"
+      ],
+      "request_id": "5a9ddeeb6236b1a80dfc292247b2347d/13785974292054006444",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:31.167960418Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:31.076676Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7eb000f14b2d041375b",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09404",
+      "recommendations": [
+        "2511.08287",
+        "2511.08444",
+        "2511.08269",
+        "2511.07970",
+        "2511.07798"
+      ],
+      "request_id": "2897ec3fb6ae851d30c2a8aa08cb4890/231085220541659402",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:28.171086942Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:27.988338Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7e900015d38fb7bee4c",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09478",
+      "recommendations": [
+        "2511.07800",
+        "2511.08325",
+        "2511.08364",
+        "2511.07833",
+        "2511.08024"
+      ],
+      "request_id": "e73c8811a27cf8e6d015cf70a911d0f1/16941027283843645356;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:25.174721441Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:25.089400Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7e60000a63411424749",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09286",
+      "recommendations": [
+        "2511.07897",
+        "2511.08238",
+        "2511.07929",
+        "2511.07749",
+        "2511.08075"
+      ],
+      "request_id": "f4470edaf5a4b1014eac2c452cc7b62a/6637404413842638142",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:22.179392113Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:22.042548Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7e300018f5029064a96",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09404",
+      "recommendations": [
+        "2511.08287",
+        "2511.08444",
+        "2511.08269",
+        "2511.07970",
+        "2511.07798"
+      ],
+      "request_id": "70bcba941af19adc5f80b868a28d86fe/9732405487557269573",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:19.179533049Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:19.102224Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7e000017214c41a1f7a",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09397",
+      "recommendations": [
+        "2511.08032",
+        "2511.08294",
+        "2511.08545",
+        "2511.07743",
+        "2511.08178"
+      ],
+      "request_id": "07c4a5620059d5dec686ac873fa1b7dc/13410242559816833763",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:16.184962221Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:16.094740Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7dd0001f05dc16807f6",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09286",
+      "recommendations": [
+        "2511.07897",
+        "2511.08238",
+        "2511.07929",
+        "2511.07749",
+        "2511.08075"
+      ],
+      "request_id": "f2f18564c8a32e2413e607199bb23bcf/1715983006583993518;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:13.186663741Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:13.127069Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7da00025924271bcff7",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09352",
+      "recommendations": [
+        "2511.07935",
+        "2511.07976",
+        "2511.07808",
+        "2511.07980",
+        "2511.07798"
+      ],
+      "request_id": "10fd5fd72b43cef6abafb42f29af7985/7824763126236940906",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:10.192837507Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:10.153892Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7d70000980f378189a0",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "7f9207340137ba5e3876155a1f170721/3548354127100541273",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:07.192801808Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:07.038927Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7d40001b88df593e4cb",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.08747",
+      "recommendations": [
+        "2511.07908",
+        "2511.08052",
+        "2511.07943",
+        "2511.08151",
+        "2511.08521"
+      ],
+      "request_id": "a077af0560440679ecd5842553f84d99/6716481448133975158",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:04.193556214Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:04.112781Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7d100014e81e05d27fa",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09392",
+      "recommendations": [
+        "2511.08378",
+        "2511.08325",
+        "2511.07738",
+        "2511.08136",
+        "2511.07831"
+      ],
+      "request_id": "eacd813ade8d50fe12255f67be402ce0/18285957836195557038;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:20:01.194866344Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:20:01.085633Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7ce0001a43c8fadaf3d",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09558",
+      "recommendations": [
+        "2511.08172",
+        "2511.07730",
+        "2511.08545",
+        "2511.07877",
+        "2511.07820"
+      ],
+      "request_id": "fd5af2cec9348300a761ffb15700c2f8/112616844912544388",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:19:58.200219975Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:19:58.107580Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7cb00012dcaf53be968",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09381",
+      "recommendations": [
+        "2511.07922",
+        "2511.08319",
+        "2511.07998",
+        "2511.08440",
+        "2511.07800"
+      ],
+      "request_id": "8036a191fab09a7c3bb61a18aa53c81e/5631886561409746062",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:19:55.202742169Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:19:55.077258Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7c7000f01d68799bb88",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "32e8b74c9339623fc1c17ebf34030112/16467959067061056574",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:19:52.203847901Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:19:51.983510Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7c500039bddeca55e8b",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09388",
+      "recommendations": [
+        "2511.08583",
+        "2511.07877",
+        "2511.08248",
+        "2511.07710",
+        "2511.08043"
+      ],
+      "request_id": "1479b5e0be701eab5bdc8e9dd666f4fb/15924638483257309695",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:19:49.543679279Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:19:49.236509Z"
+  },
+  {
+    "httpRequest": {},
+    "insertId": "691bd7c200054268fed85377",
+    "jsonPayload": {
+      "container_image_digest": "sha256:981473b769cd8be9a9d8bfac357519aae8252bb1cb9b29b42b56e43509a36c3e",
+      "data_snapshot_id": "20251112T105107Z",
+      "k": 5,
+      "message": "RECO_RESPONSE",
+      "model_version": "v1_768d",
+      "pipeline_git_sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "query_url": "https://arxiv.org/abs/2511.09416",
+      "recommendations": [
+        "2511.08028",
+        "2511.08305",
+        "2511.08344",
+        "2511.07908",
+        "2511.08376"
+      ],
+      "request_id": "56db42264f5a6c45ebab658ce2e56bab/9603498439972567501;o=1",
+      "user_group": "A"
+    },
+    "labels": {
+      "commit-sha": "f2ebaa49e9ef1eca25c8e2c2b3dc901c222a49ac",
+      "instanceId": "00147782966892aa59b7340a0a3d03be807cc573c3cbb1913502c7b7edc03f1807dd00ab132f5b160d05c5a1943ba64a6e689e66ca3f5198f49ca2c70b631adeab4ec53e0cd455ca2c806f970f0e45",
+      "managed-by": "github-actions",
+      "python_logger": "root"
+    },
+    "logName": "projects/paperrec-ai/logs/run.googleapis.com%2Fstderr",
+    "receiveTimestamp": "2025-11-18T02:19:46.547532758Z",
+    "resource": {
+      "labels": {
+        "configuration_name": "paperrec-search",
+        "location": "us-central1",
+        "project_id": "paperrec-ai",
+        "revision_name": "paperrec-search-00033-g4l",
+        "service_name": "paperrec-search"
+      },
+      "type": "cloud_run_revision"
+    },
+    "severity": "INFO",
+    "sourceLocation": {
+      "file": "/app/service/search_api.py",
+      "function": "search",
+      "line": "177"
+    },
+    "timestamp": "2025-11-18T02:19:46.344680Z"
+  }
+]
