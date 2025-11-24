@@ -5,6 +5,14 @@ import json
 import plotly.express as px
 from collections import Counter
 
+st.markdown("""
+    <style>
+    h1, h2, h3, h4, h5, h6 {
+        color: #FBF3FA !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
 # --- Configuration ---
 API_URL = "https://paperrec-search-550651297425.us-central1.run.app/search"
 LOG_FILE = "monitoring/simulation_logs.json"
