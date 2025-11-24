@@ -10,3 +10,5 @@ google-cloud-aiplatform>=1.121.0
 google-cloud-logging
 protobuf>=4.25.3,<6
 uvicorn
+streamlit
+plotly
