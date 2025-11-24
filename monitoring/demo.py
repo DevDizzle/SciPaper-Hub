@@ -7,7 +7,7 @@ from collections import Counter
 
 # --- Configuration ---
 API_URL = "https://paperrec-search-550651297425.us-central1.run.app/search"
-LOG_FILE = "simulation_logs.json"
+LOG_FILE = "monitoring/simulation_logs.json"
 
 st.set_page_config(page_title="SciPaper-Hub Command Center", layout="wide")
 st.title("🔭 SciPaper-Hub: MLOps Command Center")
