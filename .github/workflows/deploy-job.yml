@@ -9,6 +9,7 @@ on:
       - 'common/**'
       - 'requirements.txt'
       - 'Dockerfile'
+      - '.github/workflows/**'
 
 jobs:
   deploy:
@@ -53,7 +54,7 @@ jobs:
           IMAGE="us-central1-docker.pkg.dev/paperrec-ai/containers/paperrec-search:${GITHUB_SHA}"
           JOB="paperrec-search-harvest"
           REGION="us-central1"
-          ENV_VARS="PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1,INDEX_ENDPOINT_ID=7873895236596924416,DEPLOYED_INDEX_ID=papers_v1_deployed,ENV=production"
+          ENV_VARS="PROJECT_ID=paperrec-ai,REGION=us-central1,DATA_BUCKET=paperrec-ai-paperrec-data,VECTOR_COLLECTION_ID=papers-v1,INDEX_ENDPOINT_ID=7873895236596924416,DEPLOYED_INDEX_ID=paperrec_index_endpoint_1764106742365,ENV=production"
           
           CMD_ARGS=("-m" "pipelines.harvest" "--mode" "incremental" "--categories" "cs.AI cs.LG cs.CL cs.RO cs.CV" "--start_offset_days" "90")
           
