@@ -72,7 +72,7 @@ def _init_clients():
 
         # Initialize _vector_client_A
         deployed_index_id_A = settings.deployed_index_id
-        if deployed_index_id_A:
+        if deployed_index_id_A and settings.index_endpoint_id:
             try:
                 cfg_A = VectorSearchConfig(
                     project_id=settings.project_id,
@@ -87,10 +87,10 @@ def _init_clients():
                 logging.error(f"Failed to initialize vector client A: {e}", exc_info=True)
                 raise
         else:
-            logging.warning("DEPLOYED_INDEX_ID not set, vector client A will not be initialized.")
+            logging.warning("DEPLOYED_INDEX_ID and/or INDEX_ENDPOINT_ID not set, vector client A will not be initialized.")
 
         # Initialize _vector_client_B
-        if settings.b_deployed_index_id:
+        if settings.b_deployed_index_id and settings.index_endpoint_id:
             try:
                 cfg_B = VectorSearchConfig(
                     project_id=settings.project_id,
@@ -105,7 +105,7 @@ def _init_clients():
                 logging.error(f"Failed to initialize vector client B: {e}", exc_info=True)
                 raise
         else:
-            logging.warning("B_DEPLOYED_INDEX_ID not set, vector client B will not be initialized.")
+            logging.warning("B_DEPLOYED_INDEX_ID and/or INDEX_ENDPOINT_ID not set, vector client B will not be initialized.")
 
     except Exception as e:
         logging.critical(f"Application startup failed: {e}", exc_info=True)
@@ -145,8 +145,8 @@ async def search(req: SearchRequest, request: Request):
 
     if not client_to_use:
         raise HTTPException(
-            status_code=500,
-            detail="Vector index client not initialized.",
+            status_code=503,
+            detail="We turned off/undeployed the Vector Search indices that power this service, please contact eraphaelparra@gmail.com",
         )
 
     logging.info("Fetching abstract from arXiv...")

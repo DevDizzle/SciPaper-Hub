@@ -20,8 +20,8 @@ class Settings:
     region: str
     data_bucket: str
     vector_collection_id: str
-    index_endpoint_id: str
-    deployed_index_id: str
+    index_endpoint_id: Optional[str]
+    deployed_index_id: Optional[str]
     vertex_location: Optional[str] = None
     b_deployed_index_id: Optional[str] = None
     git_sha: Optional[str] = None
@@ -37,8 +37,6 @@ REQUIRED_VARS = {
     "REGION": "Default region for Vertex AI resources.",
     "DATA_BUCKET": "Cloud Storage bucket for pipeline artifacts.",
     "VECTOR_COLLECTION_ID": "Vertex Vector Search collection identifier.",
-    "INDEX_ENDPOINT_ID": "Vertex Vector Search index endpoint identifier.",
-    "DEPLOYED_INDEX_ID": "Vertex Vector Search deployed index identifier.",
 }
 
 
@@ -54,11 +52,15 @@ def get_settings() -> Settings:
     """Load :class:`Settings` from the environment."""
 
     values = {var.lower(): _get_env(var) for var in REQUIRED_VARS}
+    index_endpoint_id = _get_env("INDEX_ENDPOINT_ID", required=False)
+    deployed_index_id = _get_env("DEPLOYED_INDEX_ID", required=False)
     vertex_location = os.getenv("VERTEX_LOCATION")
     b_deployed_index_id = os.getenv("B_DEPLOYED_INDEX_ID")
     git_sha = os.getenv("GIT_SHA")
     image_digest = os.getenv("IMAGE_DIGEST")
     return Settings(
+        index_endpoint_id=index_endpoint_id,
+        deployed_index_id=deployed_index_id,
         vertex_location=vertex_location,
         b_deployed_index_id=b_deployed_index_id,
         git_sha=git_sha,
